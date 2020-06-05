@@ -1,254 +1,530 @@
-1. Chapter One: Digital Signals and Systems ........................................ 1
- * 1.1 Should Software Engineers Worry About Hardware? ............... 1
- * 1.2 Non-Digital Signals.................................................................... 3
- * 1.3 Digital Signals............................................................................ 4
- * 1.4 Conversion Systems ................................................................... 6
- * 1.5 Representation of Digital Signals .............................................. 7
- * 1.6 Types of Digital Signals............................................................. 9
- * 1.6.1 Edges ................................................................................. 9 
- * 1.6.2 Pulses................................................................................. 9 
- * 1.6.3 Non-Periodic Pulse Trains .............................................. 10 
- * 1.6.4 Periodic Pulse Trains....................................................... 11 
- * 1.6.5 Pulse-Width Modulation ................................................. 13
- * 1.7 Unit Prefixes ............................................................................ 15
- * 1.8 What's Next? ............................................................................ 16
- * Problems......................................................................................... 16
+# Computer Organization and Design Fundamentals
 
-2. Chapter Two: Numbering Systems .................................................. 17
- 2.1 Unsigned Binary Counting....................................................... 17 
- 2.2 Binary Terminology ................................................................. 20 
- 2.3 Unsigned Binary to Decimal Conversion ................................ 20 
- 2.4 Decimal to Unsigned Binary Conversion ................................ 23 
- 2.5 Binary Representation of Analog Values................................. 25 
- 2.6 Sampling Theory ...................................................................... 31 
- 2.7 Hexadecimal Representation.................................................... 34 
- 2.8 Binary Coded Decimal.............................................................36 
- 2.9 Gray Codes............................................................................... 37 
- 2.10 What's Next? .......................................................................... 40 
- Problems......................................................................................... 41
+# 1. [Chapter One: Digital Signals and Systems]()
+# 2. [Chapter Two: Numbering Systems]()
+# 3. [Chapter Three: Binary Math and Signed Representations]()
+# 4. [Chapter Four: Logic Functions and Gates]()
+# 5. [Chapter Five: Boolean Algebra]()
+# 6. [Chapter Six: Standard Boolean Expression Formats]()
+# 7. [Chapter Seven: Karnaugh Maps]()
+# 8. [Chapter Eight: Combinational Logic Applications]()
+# 9. [Chapter Nine: Binary Operation Applications]()
+# 10.[ Chapter Ten: Memory Cells]()
+# 11.[ Chapter Eleven: State Machines]()
+# 12.[ Chapter Twelve: Memory Organization]()
+# 13.[ Chapter Thirteen: Memory Hierarchy]()
+# 14.[ Chapter Fourteen: Serial Protocol Basics]()
+# 15.[ Chapter Fifteen: Introduction to Processor Architecture]()
+# 16.[ Chapter Sixteen: Intel 80x86 Base Architecture]()
 
-3. Chapter Three: Binary Math and Signed Representations ........... 43
- 3.1 Binary Addition........................................................................ 43
- 3.2 Binary Subtraction ................................................................... 45
- 3.3 Binary Complements................................................................ 46
- 3.3.1 One's Complement .......................................................... 46 
- 3.3.2 Two's Complement.......................................................... 47 
- 3.3.3 Most Significant Bit as a Sign Indicator ......................... 50 
- 3.3.4 Signed Magnitude ........................................................... 51
- 3.3.5 MSB and Number of Bits................................................ 51 
- 3.3.6 Issues Surrounding the Conversion of Binary Numbers. 52 
- 3.3.7 Minimums and Maximums ............................................. 55
- 3.4 Floating Point Binary ............................................................... 57
- 3.5 Hexadecimal Addition ............................................................. 61
- 3.6 BCD Addition .......................................................................... 64
- 3.7 Multiplication and Division by Powers of Two....................... 65
- 3.8 Easy Decimal to Binary Conversion Trick .............................. 67
- 3.9 Arithmetic Overflow ................................................................ 67
- 3.10 What's Next? .......................................................................... 69 
- Problems ........................................................................................ 69
+# 1. [Chapter One: Digital Signals and Systems]()
+ * [1.1 Should Software Engineers Worry About Hardware?]()
+ * [1.2 Non-Digital Signal]()
+ * [1.3 Digital Signals]()
+ * [1.4 Conversion Systems]()
+ * [1.5 Representation of Digital Signals]()
+ * [1.6 Types of Digital Signals]()
+ * [1.6.1 Edges]()
+ * [1.6.2 Pulses]()
+ * [1.6.3 Non-Periodic Pulse Trains]()
+ * [1.6.4 Periodic Pulse Trains]()
+ * [1.6.5 Pulse-Width Modulation]()
+ * [1.7 Unit Prefixes]()
+ * [1.8 What's Next?]()
+ * [Problems]()
 
-4. Chapter Four: Logic Functions and Gates...................................... 71
- 4.1 Logic Gate Basics .................................................................... 71 
- 4.1.1 NOT Gate........................................................................ 72 
- 4.1.2 AND Gate ....................................................................... 72 
- 4.1.3 OR Gate........................................................................... 73 
- 4.1.4 Exclusive-OR (XOR) Gate ............................................. 74
- 4.2 Truth Tables ............................................................................. 75
- 4.3 Timing Diagrams for Gates ..................................................... 79
- 4.4 Combinational Logic ............................................................... 80
- 4.5 Truth Tables for Combinational Logic .................................... 83
- 4.6 What's Next? ............................................................................ 86
- Problems ........................................................................................ 87
+# 2. [Chapter Two: Numbering Systems]()
+ * [2.1 Unsigned Binary Counting]()
+ * [2.2 Binary Terminology]()
+ * [2.3 Unsigned Binary to Decimal Conversion]()
+ * [2.4 Decimal to Unsigned Binary Conversion]()
+ * [2.5 Binary Representation of Analog Values]()
+ * [2.6 Sampling Theory]()
+ * [2.7 Hexadecimal Representation]()
+ * [2.8 Binary Coded Decimal]()
+ * [2.9 Gray Codes]()
+ * [2.10 What's Next?]()
+ * [Problems]()
 
-5. Chapter Five: Boolean Algebra ........................................................ 89
- 5.1 Need for Boolean Expressions................................................. 89
- 5.2 Symbols of Boolean Algebra ................................................... 90
- 5.3 Boolean Expressions of Combinational Logic ........................ 92
- 5.4 Laws of Boolean Algebra ........................................................ 95
- 5.5 Rules of Boolean Algebra........................................................ 96
- 5.5.1 NOT Rule........................................................................ 96 
- 5.5.2 OR Rules ......................................................................... 96 
- 5.5.3 AND Rules...................................................................... 97 
- 5.5.4 XOR Rules ...................................................................... 98 
- 5.5.5 Derivation of Other Rules ............................................... 99
- 5.6 Simplification......................................................................... 101
- 5.7 DeMorgan's Theorem ............................................................ 103
- 5.8 What's Next? .......................................................................... 106
- Problems ...................................................................................... 107
+# 3. [Chapter Three: Binary Math and Signed Representations]()
+ * [3.1 Binary Addition]()
+ * [3.2 Binary Subtraction]()
+ * [3.3 Binary Complements]()
+ * [3.3.1 One's Complement]()
+ * [3.3.2 Two's Complement]()
+ * [3.3.3 Most Significant Bit as a Sign Indicator]()
+ * [3.3.4 Signed Magnitude]()
+ * [3.3.5 MSB and Number of Bits]()
+ * [3.3.6 Issues Surrounding the Conversion of Binary Numbers. 52 ]()
+ * [3.3.7 Minimums and Maximums]()
+ * [3.4 Floating Point Binary]()
+ * [3.5 Hexadecimal Addition]()
+ * [3.6 BCD Addition]()
+ * [3.7 Multiplication and Division by Powers of Two]()
+ * [3.8 Easy Decimal to Binary Conversion Trick]()
+ * [3.9 Arithmetic Overflow]()
+ * [3.10 What's Next?]()
+ * [Problems]()
 
-6. Chapter Six: Standard Boolean Expression Formats................... 109
- 6.1 Sum-of-Products .................................................................... 109 
- 6.2 Converting an SOP Expression to a Truth Table ................... 110 
- 6.3 Converting a Truth Table to an SOP Expression ................... 112 
- 6.4 Product-of-Sums .................................................................... 114 
- 6.5 Converting POS to Truth Table ............................................. 115 
- 6.6 Converting a Truth Table to a POS Expression ..................... 118 
- 6.7 NAND-NAND Logic ............................................................. 119 
- 6.8 What's Next? .......................................................................... 122 
- Problems....................................................................................... 123
+# 4. [Chapter Four: Logic Functions and Gates]()
+ * [4.1 Logic Gate Basics]()
+ * [4.1.1 NOT Gate]()
+ * [4.1.2 AND Gate]()
+ * [4.1.3 OR Gate]()
+ * [4.1.4 Exclusive-OR (XOR) Gate]()
+ * [4.2 Truth Tables]()
+ * [4.3 Timing Diagrams for Gates]()
+ * [4.4 Combinational Logic]()
+ * [4.5 Truth Tables for Combinational Logic]()
+ * [4.6 What's Next?]()
+ * [Problems]()
 
-7. Chapter Seven: Karnaugh Maps .................................................... 125
- 7.1 The Karnaugh Map ................................................................ 125 
- 7.2 Using Karnaugh Maps ........................................................... 129 
- 7.3 "Don't Care" Conditions in a Karnaugh Map......................... 137 
- 7.4 What's Next? .......................................................................... 138 
- Problems....................................................................................... 139
+# 5. [Chapter Five: Boolean Algebra]()
+ * [5.1 Need for Boolean Expressions]()
+ * [5.2 Symbols of Boolean Algebra]()
+ * [5.3 Boolean Expressions of Combinational Logic]()
+ * [5.4 Laws of Boolean Algebra]()
+ * [5.5 Rules of Boolean Algebra]()
+ * [5.5.1 NOT Rule]()
+ * [5.5.2 OR Rules]()
+ * [5.5.3 AND Rules]()
+ * [5.5.4 XOR Rules]()
+ * [5.5.5 Derivation of Other Rules]()
+ * [5.6 Simplification]()
+ * [5.7 DeMorgan's Theorem]()
+ * [5.8 What's Next?]()
+ * [Problems]()
 
-8. Chapter Eight: Combinational Logic Applications ...................... 141
- 8.1 Adders .................................................................................... 141 
- 8.2 Seven-Segment Displays........................................................ 147 
- 8.3 Active-Low Signals................................................................ 151 
- 8.4 Decoders................................................................................. 152 
- 8.5 Multiplexers ........................................................................... 155 
- 8.6 Demultiplexers ....................................................................... 157 
- 8.7 Integrated Circuits.................................................................. 159 
- 8.8 What's Next? .......................................................................... 163 
- Problems....................................................................................... 164
+# 6. [Chapter Six: Standard Boolean Expression Formats]()
+ * [6.1 Sum-of-Products]()
+ * [6.2 Converting an SOP Expression to a Truth Table]()
+ * [6.3 Converting a Truth Table to an SOP Expression]()
+ * [6.4 Product-of-Sums]()
+ * [6.5 Converting POS to Truth Table]()
+ * [6.6 Converting a Truth Table to a POS Expression]()
+ * [6.7 NAND-NAND Logic]()
+ * [6.8 What's Next?]()
+ * [Problems]()
 
-9. Chapter Nine: Binary Operation Applications ............................. 165
-9.1 Bitwise Operations ................................................................. 165 9.1.1 Clearing/Masking Bits .................................................. 167 9.1.2 Setting Bits .................................................................... 171 9.1.3 Toggling Bits................................................................. 171
- 9.2 Comparing Bits with XOR..................................................... 173
- 9.3 Parity ...................................................................................... 174
- 9.4 Checksum............................................................................... 175
- 9.5 Cyclic Redundancy Check ..................................................... 179
- 9.5.1 CRC Process.................................................................. 185
- 9.5.2 CRC Implementation .................................................... 187
- 9.6 Hamming Code ...................................................................... 188
- 9.7 What's Next? .......................................................................... 199 
- Problems ...................................................................................... 199
+# 7. [Chapter Seven: Karnaugh Maps]()
+ * [7.1 The Karnaugh Map]()
+ * [7.2 Using Karnaugh Maps]()
+ * [7.3 "Don't Care" Conditions in a Karnaugh Map]()
+ * [7.4 What's Next?]()
+ * [Problems]()
 
-10. Chapter Ten: Memory Cells ........................................................... 203
- 10.1 New Truth Table Symbols ................................................... 203 
- 10.1.1 Edges/Transitions........................................................ 203 
- 10.1.2 Previously Stored Values............................................ 204 
- 10.1.3 Undefined Values........................................................ 204
- 10.2 The S-R Latch ...................................................................... 205 
- 10.3 The D Latch ......................................................................... 209 
- 10.4 Divide-By-Two Circuit........................................................ 212 
- 10.5 Counter................................................................................. 213 
- 10.6 Parallel Data Output............................................................. 214 
- 10.7 What's Next? ........................................................................ 215 
- Problems ...................................................................................... 216
+# 8. [Chapter Eight: Combinational Logic Applications]()
+ * [8.1 Adders]()
+ * [8.2 Seven-Segment Displays]()
+ * [8.3 Active-Low Signals]()
+ * [8.4 Decoders]()
+ * [8.5 Multiplexers]()
+ * [8.6 Demultiplexers]()
+ * [8.7 Integrated Circuits]()
+ * [8.8 What's Next?]()
+ * [Problems]()
 
-11. Chapter Eleven: State Machines .................................................... 217
- 11.1 Introduction to State Machines ............................................ 217 
- 11.1.1 States ........................................................................... 217 
- 11.1.2 State Diagrams ............................................................ 218 
- 11.1.3 Errors in State Diagrams ............................................. 222 
- 11.1.4 Basic Circuit Organization.......................................... 222
- 11.2 State Machine Design Process ............................................. 225 
- 11.3 Another State Machine Design: Pattern Detection .............. 234 
- 11.4 Mealy Versus Moore State Machines.................................. 237 
- 11.5 What's Next? ........................................................................ 238 
- Problems ...................................................................................... 239
+# 9. [Chapter Nine: Binary Operation Applications]()
+ * [9.1 Bitwise Operations]()
+ * [9.2 Comparing Bits with XOR]()
+ * [9.3 Parity]()
+ * [9.4 Checksum]()
+ * [9.5 Cyclic Redundancy Check]()
+ * [9.5.1 CRC Process]()
+ * [9.5.2 CRC Implementation]()
+ * [9.6 Hamming Code]()
+ * [9.7 What's Next?]()
+ * [Problems]()
 
-12. Chapter Twelve: Memory Organization ....................................... 241
- 12.1 Early Memory ...................................................................... 241 
- 12.2 Organization of Memory Device ......................................... 242 
- 12.3 Interfacing Memory to a Processor...................................... 244
- 12.3.1 Buses ........................................................................... 244 
- 12.3.2 Memory Maps ............................................................. 248 
- 12.3.3 Address Decoding ....................................................... 250 
- 12.3.4 Chip Select Hardware ................................................. 255
- 12.4 Memory Mapped Input/Output ............................................ 259 
- 12.5 Memory Terminology .......................................................... 260 
- 12.5.1 Random Access Memory ............................................ 260 
- 12.5.2 Read Only Memory..................................................... 261 
- 12.5.3 Static RAM versus Dynamic RAM ............................ 261
- 12.5.4 Types of DRAM and Their Timing ............................ 263 
- 12.5.5 Asynchronous vs. Synchronous Memory ................... 266 
- 12.6 What's Next? ........................................................................ 267 
- Problems....................................................................................... 267
+# 10.[ Chapter Ten: Memory Cells]()
+ * [10.1 New Truth Table Symbols]()
+ * [10.1.1 Edges/Transitions]()
+ * [10.1.2 Previously Stored Values]()
+ * [10.1.3 Undefined Values]()
+ * [10.2 The S-R Latch]()
+ * [10.3 The D Latch]()
+ * [10.4 Divide-By-Two Circuit]()
+ * [10.5 Counter]()
+ * [10.6 Parallel Data Output]()
+ * [10.7 What's Next?]()
+ * [Problems]()
 
-13. Chapter Thirteen: Memory Hierarchy .......................................... 269
- 13.1 Characteristics of the Memory Hierarchy ............................ 269 
- 13.2 Physical Characteristics of a Hard Drive ............................. 269 
- 13.2.1 Hard Drive Read/Write Head ...................................... 270 
- 13.2.2 Data Encoding ............................................................. 272 
- 13.2.3 Hard Drive Access Time ............................................. 275 
- 13.2.4 S.M.A.R.T. .................................................................. 278 
- 13.3 Organization of Data on a Hard Drive ................................. 279 
- 13.4 Cache RAM.......................................................................... 284 
- 13.4.1 Cache Organization ..................................................... 286 
- 13.4.2 Dividing Memory into Blocks .................................... 287 
- 13.4.3 Cache Operation..........................................................289 
- 13.4.4 Cache Characteristics .................................................. 290 
- 13.4.5 Cache Mapping Functions........................................... 290 
- 13.4.6 Cache Write Policy ..................................................... 299 
- 13.5 Registers............................................................................... 300 
- 13.6 What's Next? ........................................................................ 300 
- Problems....................................................................................... 301
+# 11.[ Chapter Eleven: State Machines]()
+ * [11.1 Introduction to State Machines]()
+ * [11.1.1 States]()
+ * [11.1.2 State Diagrams]()
+ * [11.1.3 Errors in State Diagrams]()
+ * [11.1.4 Basic Circuit Organization]()
+ * [11.2 State Machine Design Process]()
+ * [11.3 Another State Machine Design: Pattern Detection]()
+ * [11.4 Mealy Versus Moore State Machines]()
+ * [11.5 What's Next?]()
+ * [Problems]()
 
-14. Chapter Fourteen: Serial Protocol Basics...................................... 303
- 14.1 OSI Seven-Layer Network Model ....................................... 303 
- 14.2 Serial versus Parallel Data Transmission.............................304 
- 14.3 Anatomy of a Frame or Packet ............................................ 306 
- 14.4 Sample Protocol: IEEE 802.3 Ethernet................................ 308 
- 14.5 Sample Protocol: Internet Protocol ...................................... 310 
- 14.6 Sample Protocol: Transmission Control Protocol................ 313 
- 14.7 Dissecting a Frame............................................................... 317 
- 14.8 Additional Resources ........................................................... 320 
- 14.9 What's Next? ........................................................................ 322 
- Problems....................................................................................... 322
+# 12.[ Chapter Twelve: Memory Organization]()
+ * [12.1 Early Memory]()
+ * [12.2 Organization of Memory Device]()
+ * [12.3 Interfacing Memory to a Processor]()
+ * [12.3.1 Buses]()
+ * [12.3.2 Memory Maps]()
+ * [12.3.3 Address Decoding]()
+ * [12.3.4 Chip Select Hardware]()
+ * [12.4 Memory Mapped Input/Output]()
+ * [12.5 Memory Terminology]()
+ * [12.5.1 Random Access Memory]()
+ * [12.5.2 Read Only Memory]()
+ * [12.5.3 Static RAM versus Dynamic RAM]()
+ * [12.5.4 Types of DRAM and Their Timing]()
+ * [12.5.5 Asynchronous vs. Synchronous Memory]()
+ * [12.6 What's Next?]()
+ * [Problems]()
 
-15. Chapter Fifteen: Introduction to Processor Architecture............ 325
- 15.1 Organization versus Architecture......................................... 325 
- 15.2 Components ......................................................................... 325 
- 15.2.1 Bus............................................................................... 325 
- 15.2.2 Registers ...................................................................... 326
- 15.2.3 Flags ............................................................................ 327 
- 15.2.4 Buffers......................................................................... 328 
- 15.2.5 The Stack..................................................................... 329 
- 15.2.6 I/O Ports ...................................................................... 331
- 15.3 Processor Level.................................................................... 332 
- 15.4 CPU Level............................................................................ 333 
- 15.5 Simple Example of CPU Operation..................................... 334 
- 15.6 Assembly and Machine Language ....................................... 338 
- 15.7 Big-Endian/Little-Endian..................................................... 345 
- 15.8 Pipelined Architectures........................................................ 346 
- 15.9 Passing Data To and From Peripherals................................ 350
- 15.9.1 Memory-Mapped I/O .................................................. 351 
- 15.9.2 Polling ......................................................................... 353 
- 15.9.3 Interrupts ..................................................................... 354 
- 15.9.4 Direct Memory Access................................................ 355 
- 15.9.5 I/O Channels and Processors....................................... 356
- 15.10 What's Next? ...................................................................... 357 
- Problems ...................................................................................... 357
+# 13.[ Chapter Thirteen: Memory Hierarchy]()
+ * [13.1 Characteristics of the Memory Hierarchy]()
+ * [13.2 Physical Characteristics of a Hard Drive]()
+ * [13.2.1 Hard Drive Read/Write Head]()
+ * [13.2.2 Data Encoding]()
+ * [13.2.3 Hard Drive Access Time]()
+ * [13.2.4 S.M.A.R.T.]()
+ * [13.3 Organization of Data on a Hard Drive]()
+ * [13.4 Cache RAM]()
+ * [13.4.1 Cache Organization]()
+ * [13.4.2 Dividing Memory into Blocks]()
+ * [13.4.3 Cache Operation]()
+ * [13.4.4 Cache Characteristics]()
+ * [13.4.5 Cache Mapping Functions]()
+ * [13.4.6 Cache Write Policy]()
+ * [13.5 Registers]()
+ * [13.6 What's Next?]()
+ * [Problems]()
 
-16. Chapter Sixteen: Intel 80x86 Base Architecture........................... 359
- 16.1 Why Study the 80x86?......................................................... 359 
- 16.2 Execution Unit ..................................................................... 360 
- 16.2.1 General Purpose Registers .......................................... 361 
- 16.2.2 Address Registers........................................................ 362 
- 16.2.3 Flags ............................................................................ 363 
- 16.2.4 Internal Buses.............................................................. 365 
- 16.3 Bus Interface Unit ................................................................ 365 
- 16.3.1 Segment Addressing ................................................... 366 
- 16.3.2 Instruction Queue........................................................ 370 
- 16.4 Memory versus I/O Ports..................................................... 371 
- 16.5 What's Next? ........................................................................ 372 
- Problems ...................................................................................... 373
+# 14.[ Chapter Fourteen: Serial Protocol Basics]()
+ * [14.1 OSI Seven-Layer Network Model]()
+ * [14.2 Serial versus Parallel Data Transmission]()
+ * [14.3 Anatomy of a Frame or Packet]()
+ * [14.4 Sample Protocol: IEEE 802.3 Ethernet]()
+ * [14.5 Sample Protocol: Internet Protocol]()
+ * [14.6 Sample Protocol: Transmission Control Protocol]()
+ * [14.7 Dissecting a Frame]()
+ * [14.8 Additional Resources]()
+ * [14.9 What's Next?]()
+ * [Problems]()
 
-17. Chapter Seventeen: Intel 80x86 Assembly Language................... 375
- 17.1 Assemblers versus Compilers .............................................. 375 
- 17.2 Components of a Line of Assembly Language.................... 376 
- 17.3 Assembly Language Directives ........................................... 378
- 17.3.1 SEGMENT Directive.................................................. 378 
- 17.3.2 .MODEL, .STACK, .DATA, and .CODE Directives . 380 
- 17.3.3 PROC Directive .......................................................... 381
- 17.3.4 END Directive............................................................. 382 
- 17.3.5 Data Definition Directives .......................................... 382 
- 17.3.6 EQU Directive............................................................. 383
- 17.4 80x86 Opcodes..................................................................... 385 
- 17.4.1 Data Transfer...............................................................385 
- 17.4.2 Data Manipulation....................................................... 386 
- 17.4.3 Program Control .......................................................... 387 
- 17.4.4 Special Operations ...................................................... 390
- 17.5 Addressing Modes................................................................ 391 
- 17.5.1 Register Addressing .................................................... 391 
- 17.5.2 Immediate Addressing................................................. 392 
- 17.5.3 Pointer Addressing ...................................................... 392
- 17.6 Sample 80x86 Assembly Language Programs..................... 393 
- 17.7 Additional 80x86 Programming Resources ......................... 397 
- 17.8 What's Next? ........................................................................ 398 
- Problems....................................................................................... 398
+# 15.[ Chapter Fifteen: Introduction to Processor Architecture]()
+ * [15.1 Organization versus Architecture]()
+ * [15.2 Components]()
+ * [15.2.1 Bus]()
+ * [15.2.2 Registers]()
+ * [15.2.3 Flags]()
+ * [15.2.4 Buffers]()
+ * [15.2.5 The Stack]()
+ * [15.2.6 I/O Ports]()
+ * [15.3 Processor Level]()
+ * [15.4 CPU Level]()
+ * [15.5 Simple Example of CPU Operation]()
+ * [15.6 Assembly and Machine Language]()
+ * [15.7 Big-Endian/Little-Endian]()
+ * [15.8 Pipelined Architectures]()
+ * [15.9 Passing Data To and From Peripherals]()
+ * [15.9.1 Memory-Mapped I/O]()
+ * [15.9.2 Polling]()
+ * [15.9.3 Interrupts]()
+ * [15.9.4 Direct Memory Access]()
+ * [15.9.5 I/O Channels and Processors]()
+ * [15.10 What's Next?]()
+ * [Problems]()
+
+# 16.[ Chapter Sixteen: Intel 80x86 Base Architecture]()
+ * [16.1 Why Study the 80x86?]()
+ * [16.2 Execution Unit]()
+ * [16.2.1 General Purpose Registers]()
+ * [16.2.2 Address Registers]()
+ * [16.2.3 Flags]()
+ * [16.2.4 Internal Buses]()
+ * [16.3 Bus Interface Unit]()
+ * [16.3.1 Segment Addressing]()
+ * [16.3.2 Instruction Queue]()
+ * [16.4 Memory versus I/O Ports]()
+ * [16.5 What's Next?]()
+ * [Problems]()
+
+# 17.[ Chapter Seventeen: Intel 80x86 Assembly Language]()
+ * [17.1 Assemblers versus Compilers]()
+ * [17.2 Components of a Line of Assembly Language]()
+ * [17.3 Assembly Language Directives]()
+ * [17.3.1 SEGMENT Directive]()
+ * [17.3.2 .MODEL, .STACK, .DATA, and .CODE Directives . 380 ]()
+ * [17.3.3 PROC Directive]()
+ * [17.3.4 END Directive]()
+ * [17.3.5 Data Definition Directives]()
+ * [17.3.6 EQU Directive]()
+ * [17.4 80x86 Opcodes]()
+ * [17.4.1 Data Transfer]()
+ * [17.4.2 Data Manipulation]()
+ * [17.4.3 Program Control]()
+ * [17.4.4 Special Operations]()
+ * [17.5 Addressing Modes]()
+ * [17.5.1 Register Addressing]()
+ * [17.5.2 Immediate Addressing]()
+ * [17.5.3 Pointer Addressing]()
+ * [17.6 Sample 80x86 Assembly Language Programs]()
+ * [17.7 Additional 80x86 Programming Resources]()
+ * [17.8 What's Next?]()
+ * [Problems]()
+
+
+# 1. [Chapter One: Digital Signals and Systems]()
+# * [1.1 Should Software Engineers Worry About Hardware?]()
+# * [1.2 Non-Digital Signal]()
+# * [1.3 Digital Signals]()
+# * [1.4 Conversion Systems]()
+# * [1.5 Representation of Digital Signals]()
+# * [1.6 Types of Digital Signals]()
+# * [1.6.1 Edges]()
+# * [1.6.2 Pulses]()
+# * [1.6.3 Non-Periodic Pulse Trains]()
+# * [1.6.4 Periodic Pulse Trains]()
+# * [1.6.5 Pulse-Width Modulation]()
+# * [1.7 Unit Prefixes]()
+# * [1.8 What's Next?]()
+# * [Problems]()
+
+# 2. [Chapter Two: Numbering Systems]()
+# * [2.1 Unsigned Binary Counting]()
+# * [2.2 Binary Terminology]()
+# * [2.3 Unsigned Binary to Decimal Conversion]()
+# * [2.4 Decimal to Unsigned Binary Conversion]()
+# * [2.5 Binary Representation of Analog Values]()
+# * [2.6 Sampling Theory]()
+# * [2.7 Hexadecimal Representation]()
+# * [2.8 Binary Coded Decimal]()
+# * [2.9 Gray Codes]()
+# * [2.10 What's Next?]()
+# * [Problems]()
+
+# 3. [Chapter Three: Binary Math and Signed Representations]()
+# * [3.1 Binary Addition]()
+# * [3.2 Binary Subtraction]()
+# * [3.3 Binary Complements]()
+# * [3.3.1 One's Complement]()
+# * [3.3.2 Two's Complement]()
+# * [3.3.3 Most Significant Bit as a Sign Indicator]()
+# * [3.3.4 Signed Magnitude]()
+# * [3.3.5 MSB and Number of Bits]()
+# * [3.3.6 Issues Surrounding the Conversion of Binary Numbers. 52 ]()
+# * [3.3.7 Minimums and Maximums]()
+# * [3.4 Floating Point Binary]()
+# * [3.5 Hexadecimal Addition]()
+# * [3.6 BCD Addition]()
+# * [3.7 Multiplication and Division by Powers of Two]()
+# * [3.8 Easy Decimal to Binary Conversion Trick]()
+# * [3.9 Arithmetic Overflow]()
+# * [3.10 What's Next?]()
+# * [Problems]()
+
+# 4. [Chapter Four: Logic Functions and Gates]()
+# * [4.1 Logic Gate Basics]()
+# * [4.1.1 NOT Gate]()
+# * [4.1.2 AND Gate]()
+# * [4.1.3 OR Gate]()
+# * [4.1.4 Exclusive-OR (XOR) Gate]()
+# * [4.2 Truth Tables]()
+# * [4.3 Timing Diagrams for Gates]()
+# * [4.4 Combinational Logic]()
+# * [4.5 Truth Tables for Combinational Logic]()
+# * [4.6 What's Next?]()
+# * [Problems]()
+
+# 5. [Chapter Five: Boolean Algebra]()
+# * [5.1 Need for Boolean Expressions]()
+# * [5.2 Symbols of Boolean Algebra]()
+# * [5.3 Boolean Expressions of Combinational Logic]()
+# * [5.4 Laws of Boolean Algebra]()
+# * [5.5 Rules of Boolean Algebra]()
+# * [5.5.1 NOT Rule]()
+# * [5.5.2 OR Rules]()
+# * [5.5.3 AND Rules]()
+# * [5.5.4 XOR Rules]()
+# * [5.5.5 Derivation of Other Rules]()
+# * [5.6 Simplification]()
+# * [5.7 DeMorgan's Theorem]()
+# * [5.8 What's Next?]()
+# * [Problems]()
+
+# 6. [Chapter Six: Standard Boolean Expression Formats]()
+# * [6.1 Sum-of-Products]()
+# * [6.2 Converting an SOP Expression to a Truth Table]()
+# * [6.3 Converting a Truth Table to an SOP Expression]()
+# * [6.4 Product-of-Sums]()
+# * [6.5 Converting POS to Truth Table]()
+# * [6.6 Converting a Truth Table to a POS Expression]()
+# * [6.7 NAND-NAND Logic]()
+# * [6.8 What's Next?]()
+# * [Problems]()
+
+# 7. [Chapter Seven: Karnaugh Maps]()
+# * [7.1 The Karnaugh Map]()
+# * [7.2 Using Karnaugh Maps]()
+# * [7.3 "Don't Care" Conditions in a Karnaugh Map]()
+# * [7.4 What's Next?]()
+# * [Problems]()
+
+# 8. [Chapter Eight: Combinational Logic Applications]()
+# * [8.1 Adders]()
+# * [8.2 Seven-Segment Displays]()
+# * [8.3 Active-Low Signals]()
+# * [8.4 Decoders]()
+# * [8.5 Multiplexers]()
+# * [8.6 Demultiplexers]()
+# * [8.7 Integrated Circuits]()
+# * [8.8 What's Next?]()
+# * [Problems]()
+
+# 9. [Chapter Nine: Binary Operation Applications]()
+# * [9.1 Bitwise Operations]()
+# * [9.2 Comparing Bits with XOR]()
+# * [9.3 Parity]()
+# * [9.4 Checksum]()
+# * [9.5 Cyclic Redundancy Check]()
+# * [9.5.1 CRC Process]()
+# * [9.5.2 CRC Implementation]()
+# * [9.6 Hamming Code]()
+# * [9.7 What's Next?]()
+# * [Problems]()
+
+# 10. [Chapter Ten: Memory Cells]()
+# * [10.1 New Truth Table Symbols]()
+# * [10.1.1 Edges/Transitions]()
+# * [10.1.2 Previously Stored Values]()
+# * [10.1.3 Undefined Values]()
+# * [10.2 The S-R Latch]()
+# * [10.3 The D Latch]()
+# * [10.4 Divide-By-Two Circuit]()
+# * [10.5 Counter]()
+# * [10.6 Parallel Data Output]()
+# * [10.7 What's Next?]()
+# * [Problems]()
+
+# 11.[ Chapter Eleven: State Machines]()
+# * [11.1 Introduction to State Machines]()
+# * [11.1.1 States]()
+# * [11.1.2 State Diagrams]()
+# * [11.1.3 Errors in State Diagrams]()
+# * [11.1.4 Basic Circuit Organization]()
+# * [11.2 State Machine Design Process]()
+# * [11.3 Another State Machine Design: Pattern Detection]()
+# * [11.4 Mealy Versus Moore State Machines]()
+# * [11.5 What's Next?]()
+# * [Problems]()
+
+12. [Chapter Twelve: Memory Organization]()
+# * [12.1 Early Memory]()
+# * [12.2 Organization of Memory Device]()
+# * [12.3 Interfacing Memory to a Processor]()
+# * [12.3.1 Buses]()
+# * [12.3.2 Memory Maps]()
+# * [12.3.3 Address Decoding]()
+# * [12.3.4 Chip Select Hardware]()
+# * [12.4 Memory Mapped Input/Output]()
+# * [12.5 Memory Terminology]()
+# * [12.5.1 Random Access Memory]()
+# * [12.5.2 Read Only Memory]()
+# * [12.5.3 Static RAM versus Dynamic RAM]()
+# * [12.5.4 Types of DRAM and Their Timing]()
+# * [12.5.5 Asynchronous vs. Synchronous Memory]()
+# * [12.6 What's Next?]()
+# * [Problems]()
+
+# 13.[ Chapter Thirteen: Memory Hierarchy]()
+# * [13.1 Characteristics of the Memory Hierarchy]()
+# * [13.2 Physical Characteristics of a Hard Drive]()
+# * [13.2.1 Hard Drive Read/Write Head]()
+# * [13.2.2 Data Encoding]()
+# * [13.2.3 Hard Drive Access Time]()
+# * [13.2.4 S.M.A.R.T.]()
+# * [13.3 Organization of Data on a Hard Drive]()
+# * [13.4 Cache RAM]()
+# * [13.4.1 Cache Organization]()
+# * [13.4.2 Dividing Memory into Blocks]()
+# * [13.4.3 Cache Operation]()
+# * [13.4.4 Cache Characteristics]()
+# * [13.4.5 Cache Mapping Functions]()
+# * [13.4.6 Cache Write Policy]()
+# * [13.5 Registers]()
+# * [13.6 What's Next?]()
+# * [Problems]()
+
+# 14.[ Chapter Fourteen: Serial Protocol Basics]()
+# * [14.1 OSI Seven-Layer Network Model]()
+# * [14.2 Serial versus Parallel Data Transmission]()
+# * [14.3 Anatomy of a Frame or Packet]()
+# * [14.4 Sample Protocol: IEEE 802.3 Ethernet]()
+# * [14.5 Sample Protocol: Internet Protocol]()
+# * [14.6 Sample Protocol: Transmission Control Protocol]()
+# * [14.7 Dissecting a Frame]()
+# * [14.8 Additional Resources]()
+# * [14.9 What's Next?]()
+# * [Problems]()
+
+# 15.[ Chapter Fifteen: Introduction to Processor Architecture]()
+# * [15.1 Organization versus Architecture]()
+# * [15.2 Components]()
+# * [15.2.1 Bus]()
+# * [15.2.2 Registers]()
+# * [15.2.3 Flags]()
+# * [15.2.4 Buffers]()
+# * [15.2.5 The Stack]()
+# * [15.2.6 I/O Ports]()
+# * [15.3 Processor Level]()
+# * [15.4 CPU Level]()
+# * [15.5 Simple Example of CPU Operation]()
+# * [15.6 Assembly and Machine Language]()
+# * [15.7 Big-Endian/Little-Endian]()
+# * [15.8 Pipelined Architectures]()
+# * [15.9 Passing Data To and From Peripherals]()
+# * [15.9.1 Memory-Mapped I/O]()
+# * [15.9.2 Polling]()
+# * [15.9.3 Interrupts]()
+# * [15.9.4 Direct Memory Access]()
+# * [15.9.5 I/O Channels and Processors]()
+# * [15.10 What's Next?]()
+# * [Problems]()
+
+# 16.[ Chapter Sixteen: Intel 80x86 Base Architecture]()
+# * [16.1 Why Study the 80x86?]()
+# * [16.2 Execution Unit]()
+# * [16.2.1 General Purpose Registers]()
+# * [16.2.2 Address Registers]()
+# * [16.2.3 Flags]()
+# * [16.2.4 Internal Buses]()
+# * [16.3 Bus Interface Unit]()
+# * [16.3.1 Segment Addressing]()
+# * [16.3.2 Instruction Queue]()
+# * [16.4 Memory versus I/O Ports]()
+# * [16.5 What's Next?]()
+# * [Problems]()
+
+# 17.[ Chapter Seventeen: Intel 80x86 Assembly Language]()
+# * [17.1 Assemblers versus Compilers]()
+# * [17.2 Components of a Line of Assembly Language]()
+# * [17.3 Assembly Language Directives]()
+# * [17.3.1 SEGMENT Directive]()
+# * [17.3.2 .MODEL, .STACK, .DATA, and .CODE Directives . 380 ]()
+# * [17.3.3 PROC Directive]()
+# * [17.3.4 END Directive]()
+# * [17.3.5 Data Definition Directives]()
+# * [17.3.6 EQU Directive]()
+# * [17.4 80x86 Opcodes]()
+# * [17.4.1 Data Transfer]()
+# * [17.4.2 Data Manipulation]()
+# * [17.4.3 Program Control]()
+# * [17.4.4 Special Operations]()
+# * [17.5 Addressing Modes]()
+# * [17.5.1 Register Addressing]()
+# * [17.5.2 Immediate Addressing]()
+# * [17.5.3 Pointer Addressing]()
+# * [17.6 Sample 80x86 Assembly Language Programs]()
+# * [17.7 Additional 80x86 Programming Resources]()
+# * [17.8 What's Next?]()
+# * [Problems]()
+
