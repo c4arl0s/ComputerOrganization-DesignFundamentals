@@ -290,6 +290,11 @@ The principles of computer organization provide tools to create better designs.
 > When you control parts design, you can integrate the whole package much more elegantly.
 
 # * [1.1 Should Software Engineers Worry About Hardware?]()
+
+The real world is analog. When values such as temperature or weight change over time, they follow what is called a **continuous curve**. It is sufficient to say that analog values represent a continuous signal with infinitesimal resolution.
+
+![Screen Shot 2020-06-05 at 15 23 34](https://user-images.githubusercontent.com/24994818/83919628-9f43fd00-a740-11ea-910f-f5257759b79e.png)
+
 # * [1.2 Non-Digital Signal]()
 # * [1.3 Digital Signals]()
 # * [1.4 Conversion Systems]()
