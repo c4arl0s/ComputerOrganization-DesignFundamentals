@@ -273,7 +273,22 @@
  * [Problems]()
 
 
+# Computer Organization and Design Fundamentals
+
 # 1. [Chapter One: Digital Signals and Systems]()
+
+Knowing how to design and build a computer may not be vital to the computer professional, but it goes a long way toward improving their skills, but example, making them better drivers.
+
+The principles of computer organization provide tools to create better designs.
+
+	* System Design Tools.
+	* Software Design Tools.
+	* Improved troubleshooting skills.
+	* Interconnectivity
+	* Marketability
+
+> When you control parts design, you can integrate the whole package much more elegantly.
+
 # * [1.1 Should Software Engineers Worry About Hardware?]()
 # * [1.2 Non-Digital Signal]()
 # * [1.3 Digital Signals]()
