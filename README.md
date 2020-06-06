@@ -296,6 +296,25 @@ The real world is analog. When values such as temperature or weight change over 
 ![Screen Shot 2020-06-05 at 15 23 34](https://user-images.githubusercontent.com/24994818/83919628-9f43fd00-a740-11ea-910f-f5257759b79e.png)
 
 # * [1.2 Non-Digital Signal]()
+
+There is such a thing as an analog computer, a computer that processes information using analog levels of electricity or the positions of mechanical devices. Now computers represent an analog value by converting it to a number with a fixed resolution. This measurement is referred to as a **digital value**.
+
+![Screen Shot 2020-06-06 at 13 03 35](https://user-images.githubusercontent.com/24994818/83951299-269f7800-a7f6-11ea-858b-63451d4794b2.png)
+
+The computer can only measure the signal at intervals. Each measurement is called a **sample**. The rate at which these samples are taken is called the **Sampling rate**.
+
+![Screen Shot 2020-06-06 at 13 05 13](https://user-images.githubusercontent.com/24994818/83951333-61091500-a7f6-11ea-9c89-f0d55adb0702.png)
+
+Two problem arise from this process: information can be lost between the measurement and information can be lost due to the **rounding** of the measurement. First, if the sampling rate is too slow, the some details of the signal may be missed.
+
+![Screen Shot 2020-06-06 at 13 07 18](https://user-images.githubusercontent.com/24994818/83951375-ac232800-a7f6-11ea-8b82-7b3a0126502b.png)
+
+Second, if the computer does not record with enough accuracy an error may be introduced between the actual measurement and the recorded value.
+
+![Screen Shot 2020-06-06 at 13 08 48](https://user-images.githubusercontent.com/24994818/83951394-e42a6b00-a7f6-11ea-87a2-fff593ffe989.png)
+
+These effects can be reduced by increasing the resolution of the measurement and increasing the sampling rate. A discussion of this can be found in Chapter 2 in the section titled "Sampling Theory"	
+
 # * [1.3 Digital Signals]()
 # * [1.4 Conversion Systems]()
 # * [1.5 Representation of Digital Signals]()
