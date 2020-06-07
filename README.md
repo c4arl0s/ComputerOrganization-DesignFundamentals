@@ -291,11 +291,14 @@ The principles of computer organization provide tools to create better designs.
 
 # * [1.1 Should Software Engineers Worry About Hardware?]()
 
-The real world is analog. When values such as temperature or weight change over time, they follow what is called a **continuous curve**. It is sufficient to say that analog values represent a continuous signal with infinitesimal resolution.
 
 ![Screen Shot 2020-06-05 at 15 23 34](https://user-images.githubusercontent.com/24994818/83919628-9f43fd00-a740-11ea-910f-f5257759b79e.png)
 
 # * [1.2 Non-Digital Signal]()
+
+The real world is analog. When values such as temperature or weight change over time, they follow what is called a **continuous curve**. It is sufficient to say that analog values represent a continuous signal with infinitesimal resolution.
+
+# * [1.3 Digital Signals]()
 
 There is such a thing as an analog computer, a computer that processes information using analog levels of electricity or the positions of mechanical devices. Now computers represent an analog value by converting it to a number with a fixed resolution. This measurement is referred to as a **digital value**.
 
@@ -315,8 +318,24 @@ Second, if the computer does not record with enough accuracy an error may be int
 
 These effects can be reduced by increasing the resolution of the measurement and increasing the sampling rate. A discussion of this can be found in Chapter 2 in the section titled "Sampling Theory"	
 
-# * [1.3 Digital Signals]()
 # * [1.4 Conversion Systems]()
+
+The typical system used to convert an external condition such as pressure, temperature, or light intensity to a format usable by a digital system is shown in the block diagram.
+
+![Screen Shot 2020-06-07 at 12 00 01](https://user-images.githubusercontent.com/24994818/83974936-72195b00-a8b6-11ea-8ac5-3703e364fea6.png)
+
+The interface between the external condition and the electronics of the system is the sensor. This device converts the environmental conditions into a signal readable by analog electronics. Often, this signal is weak and is easily distorted by noise. Therefore, the output of the sensor is usually amplified and cleaned up before being converted to digital values by the Analog-to-Digital Converter (ADC).
+
+Continuous operation of this system results in a sequence of digital measurements or samples that are stored in the computer where it can be viewed much like the table of numbers in a spreadsheet.
+
+First benefit of digital systems: If an analog signal is transmitted over long distances, noise attaches itself to the signal. To keep the signal strong enough to reach its destination,it must be amplified. All of the noise attached itself to the signal, however, is amplified along with the original signal resulting in distortion. 
+
+Noise cannot attach itself to a digital signal. Once an analog signal has been converted to a sequence of numbers, the signal's characteristics remain the same as long as the number don't change. Therefore, digital systems such as contemporary long-distance phone system do not suffer from degradation over long distances.
+
+A second benefit is that once a signal is turned into a sequence of numbs, mathematical algorithms can be used to operate on the data. Disciplines such as Digital Signal Processing and the study of wavelets allow for much more accurate processing of signals that analog systems were ever able to achieve.
+
+These advantages come at a price, however. As mentioned earlier, if the samples are taken too slowly, details of the analog input are missed. It the resolution of the samples is not fine enough, the signal may not be precisely represented with the signal values. Last of all, additional hardware is required to convert the signal from analog to digital
+
 # * [1.5 Representation of Digital Signals]()
 # * [1.6 Types of Digital Signals]()
 # * [1.6.1 Edges]()
