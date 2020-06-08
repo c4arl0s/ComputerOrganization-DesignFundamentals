@@ -354,9 +354,11 @@ Alternatively, multiple lines can be combined into a more abstract representatio
 
 Hash marks indicate invalid or changing data. This could mean that one or all of the signals are changing their values, or that due to the nature of the electronics, the values of the data signals cannot be predicted. In the later case, the system may need to wait to allow the signals to stabilize. 
 
-
 # * [1.6 Types of Digital Signals]()
 # * [1.6.1 Edges]()
+
+A single binary signal can have one of two possible transitions as shown in figure 1-11. The first one, a transition from a logic 0 to a logic 1, is called a rising edge transition. The second one, a transition from a logic 1 to a logic 0 is called a falling edge transition.
+
 # * [1.6.2 Pulses]()
 # * [1.6.3 Non-Periodic Pulse Trains]()
 # * [1.6.4 Periodic Pulse Trains]()
