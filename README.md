@@ -359,7 +359,18 @@ Hash marks indicate invalid or changing data. This could mean that one or all of
 
 A single binary signal can have one of two possible transitions as shown in figure 1-11. The first one, a transition from a logic 0 to a logic 1, is called a rising edge transition. The second one, a transition from a logic 1 to a logic 0 is called a falling edge transition.
 
+![Screen Shot 2020-06-08 at 18 12 18](https://user-images.githubusercontent.com/24994818/84089054-9dce3b00-a9b3-11ea-82e0-76c251d12674.png)
+
 # * [1.6.2 Pulses]()
+
+A binary pulse occurs when a signal changes from one value to the other for a short period, then returns to its originals value. Examples of this type of signal might be the power-on or reset buttons on a computer (momentarily pressed, the released) or the button used to initialize synchronization between a PDA and a computer.
+
+![Screen Shot 2020-06-08 at 18 13 08](https://user-images.githubusercontent.com/24994818/84089084-b9d1dc80-a9b3-11ea-8647-b3e49af21a70.png)
+
+There are two types of pulses. The first is called a **positive-going-pulse**, and it has an idle state of logic 0 with a short pulse to logic 1. The other one, a **negative-going pulse**, has an idle state of logic 1 with a short pulse to logic 0. Both of these signals are shown in Figure-1-12.
+
+![Screen Shot 2020-06-08 at 18 15 29](https://user-images.githubusercontent.com/24994818/84089234-0ddcc100-a9b4-11ea-858f-b336b1c14ebd.png)
+
 # * [1.6.3 Non-Periodic Pulse Trains]()
 # * [1.6.4 Periodic Pulse Trains]()
 # * [1.6.5 Pulse-Width Modulation]()
