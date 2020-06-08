@@ -337,6 +337,24 @@ A second benefit is that once a signal is turned into a sequence of numbs, mathe
 These advantages come at a price, however. As mentioned earlier, if the samples are taken too slowly, details of the analog input are missed. It the resolution of the samples is not fine enough, the signal may not be precisely represented with the signal values. Last of all, additional hardware is required to convert the signal from analog to digital
 
 # * [1.5 Representation of Digital Signals]()
+
+Digital Systems do not store numbers the way humans do. Digital systems work with numbs using millions of tiny switches called transistors. Each transistor can remember only one f two possible values, on or off. This referred to as a **binary system**.
+
+The complexity of the computer comes in how the millions of transistors are designed to work together. The purpose of this discussion, the two values of a transistor will be referred to as **logic 1** and **logic 0**.
+
+![Screen Shot 2020-06-08 at 18 01 42](https://user-images.githubusercontent.com/24994818/84088447-21872800-a9b2-11ea-9a44-da484e46bd53.png)
+
+Sometimes, two or more binary lines are grouped together to perform a single function. 
+
+![Screen Shot 2020-06-08 at 18 02 44](https://user-images.githubusercontent.com/24994818/84088508-44b1d780-a9b2-11ea-9afc-8a9e032bfa1a.png)
+
+Alternatively, multiple lines can be combined into a more abstract representation such as the one shown in Figure 1-10
+
+![Screen Shot 2020-06-08 at 18 04 00](https://user-images.githubusercontent.com/24994818/84088582-71fe8580-a9b2-11ea-900c-0d08793f68a6.png)
+
+Hash marks indicate invalid or changing data. This could mean that one or all of the signals are changing their values, or that due to the nature of the electronics, the values of the data signals cannot be predicted. In the later case, the system may need to wait to allow the signals to stabilize. 
+
+
 # * [1.6 Types of Digital Signals]()
 # * [1.6.1 Edges]()
 # * [1.6.2 Pulses]()
