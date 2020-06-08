@@ -369,9 +369,14 @@ A binary pulse occurs when a signal changes from one value to the other for a sh
 
 There are two types of pulses. The first is called a **positive-going-pulse**, and it has an idle state of logic 0 with a short pulse to logic 1. The other one, a **negative-going pulse**, has an idle state of logic 1 with a short pulse to logic 0. Both of these signals are shown in Figure-1-12.
 
-![Screen Shot 2020-06-08 at 18 15 29](https://user-images.githubusercontent.com/24994818/84089234-0ddcc100-a9b4-11ea-858f-b336b1c14ebd.png)
-
 # * [1.6.3 Non-Periodic Pulse Trains]()
+
+Some digital signals such as the data wires of an Ethernet link or the data and address lines of a memory interface do not have a characteristic pattern in their changes between logic 1 and logic 0. These are called **non-periodic pulse trains**
+
+![Screen Shot 2020-06-08 at 18 18 44](https://user-images.githubusercontent.com/24994818/84089414-86438200-a9b4-11ea-8c43-9d8d81090287.png)
+
+Like music, the duration of the notes or the spaces between the notes can be longer or shorter. On the page, they do not look meaningful, but once the reader is given the tools to interpret the signal, he data they contain becomes clear.
+
 # * [1.6.4 Periodic Pulse Trains]()
 # * [1.6.5 Pulse-Width Modulation]()
 # * [1.7 Unit Prefixes]()
