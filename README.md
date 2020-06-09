@@ -378,6 +378,16 @@ Some digital signals such as the data wires of an Ethernet link or the data and 
 Like music, the duration of the notes or the spaces between the notes can be longer or shorter. On the page, they do not look meaningful, but once the reader is given the tools to interpret the signal, he data they contain becomes clear.
 
 # * [1.6.4 Periodic Pulse Trains]()
+
+Some signals act as the heartbeat to a digital systems. Periodic pulse trains is meat to synchronized events or keep processes moving.
+
+![Screen Shot 2020-06-09 at 13 36 54](https://user-images.githubusercontent.com/24994818/84186574-5947ab80-aa56-11ea-8d75-1381c6b0c827.png)
+
+![Screen Shot 2020-06-09 at 13 37 49](https://user-images.githubusercontent.com/24994818/84186627-6d8ba880-aa56-11ea-9b80-2eb9cbb9f4a0.png)
+
+Frequency = 1 / Period [seconds]
+
+
 # * [1.6.5 Pulse-Width Modulation]()
 # * [1.7 Unit Prefixes]()
 # * [1.8 What's Next?]()
