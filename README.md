@@ -387,8 +387,15 @@ Some signals act as the heartbeat to a digital systems. Periodic pulse trains is
 
 Frequency = 1 / Period [seconds]
 
-
 # * [1.6.5 Pulse-Width Modulation]()
+
+The last measurement of a periodic waveform is the **duty cycle**. The duty cycle represents the percentage of time that a periodic signal is a logic 1. 
+
+![Screen Shot 2020-06-09 at 13 40 36](https://user-images.githubusercontent.com/24994818/84186884-d07d3f80-aa56-11ea-8eda-203e280a6815.png)
+
+Duty Cycle = ((logic 1 pulse duration) [seconds] / period [Seconds] ) * 100%
+
+
 # * [1.7 Unit Prefixes]()
 # * [1.8 What's Next?]()
 # * [Problems]()
