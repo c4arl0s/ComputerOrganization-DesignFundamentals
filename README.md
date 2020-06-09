@@ -1,6 +1,6 @@
 # Computer Organization and Design Fundamentals
 
-# 1. [Chapter One: Digital Signals and Systems]()
+# 1. [Chapter One: Digital Signals and Systems](https://github.com/c4arl0s/ComputerOrganization-DesignFundamentals#1-chapter-one-digital-signals-and-systems-1)
 # 2. [Chapter Two: Numbering Systems]()
 # 3. [Chapter Three: Binary Math and Signed Representations]()
 # 4. [Chapter Four: Logic Functions and Gates]()
@@ -17,21 +17,21 @@
 # 15.[ Chapter Fifteen: Introduction to Processor Architecture]()
 # 16.[ Chapter Sixteen: Intel 80x86 Base Architecture]()
 
-# 1. [Chapter One: Digital Signals and Systems]()
- * [1.1 Should Software Engineers Worry About Hardware?]()
- * [1.2 Non-Digital Signal]()
- * [1.3 Digital Signals]()
- * [1.4 Conversion Systems]()
- * [1.5 Representation of Digital Signals]()
- * [1.6 Types of Digital Signals]()
- * [1.6.1 Edges]()
- * [1.6.2 Pulses]()
- * [1.6.3 Non-Periodic Pulse Trains]()
- * [1.6.4 Periodic Pulse Trains]()
- * [1.6.5 Pulse-Width Modulation]()
- * [1.7 Unit Prefixes]()
- * [1.8 What's Next?]()
- * [Problems]()
+# 1. [Chapter One: Digital Signals and Systems](https://github.com/c4arl0s/ComputerOrganization-DesignFundamentals#computer-organization-and-design-fundamentals)
+ * [1.1 Should Software Engineers Worry About Hardware?](https://github.com/c4arl0s/ComputerOrganization-DesignFundamentals#-11-should-software-engineers-worry-about-hardware)
+ * [1.2 Non-Digital Signal](https://github.com/c4arl0s/ComputerOrganization-DesignFundamentals#-12-non-digital-signal)
+ * [1.3 Digital Signals](https://github.com/c4arl0s/ComputerOrganization-DesignFundamentals#-13-digital-signals)
+ * [1.4 Conversion Systems](https://github.com/c4arl0s/ComputerOrganization-DesignFundamentals#-14-conversion-systems)
+ * [1.5 Representation of Digital Signals](https://github.com/c4arl0s/ComputerOrganization-DesignFundamentals#-15-representation-of-digital-signals)
+ * [1.6 Types of Digital Signals](https://github.com/c4arl0s/ComputerOrganization-DesignFundamentals#-16-types-of-digital-signals)
+ * [1.6.1 Edges](https://github.com/c4arl0s/ComputerOrganization-DesignFundamentals#-161-edges)
+ * [1.6.2 Pulses](https://github.com/c4arl0s/ComputerOrganization-DesignFundamentals#-162-pulses)
+ * [1.6.3 Non-Periodic Pulse Trains](https://github.com/c4arl0s/ComputerOrganization-DesignFundamentals#-163-non-periodic-pulse-trains)
+ * [1.6.4 Periodic Pulse Trains](https://github.com/c4arl0s/ComputerOrganization-DesignFundamentals#-164-periodic-pulse-trains)
+ * [1.6.5 Pulse-Width Modulation](https://github.com/c4arl0s/ComputerOrganization-DesignFundamentals#-165-pulse-width-modulation)
+ * [1.7 Unit Prefixes](https://github.com/c4arl0s/ComputerOrganization-DesignFundamentals#-17-unit-prefixes)
+ * [1.8 What's Next?](https://github.com/c4arl0s/ComputerOrganization-DesignFundamentals#-18-whats-next)
+ * [Problems](https://github.com/c4arl0s/ComputerOrganization-DesignFundamentals#-problems)
 
 # 2. [Chapter Two: Numbering Systems]()
  * [2.1 Unsigned Binary Counting]()
@@ -275,7 +275,7 @@
 
 # Computer Organization and Design Fundamentals
 
-# 1. [Chapter One: Digital Signals and Systems]()
+# 1. [Chapter One: Digital Signals and Systems](https://github.com/c4arl0s/ComputerOrganization-DesignFundamentals#1-chapter-one-digital-signals-and-systems-1)
 
 Knowing how to design and build a computer may not be vital to the computer professional, but it goes a long way toward improving their skills, but example, making them better drivers.
 
@@ -289,16 +289,16 @@ The principles of computer organization provide tools to create better designs.
 
 > When you control parts design, you can integrate the whole package much more elegantly.
 
-# * [1.1 Should Software Engineers Worry About Hardware?]()
+# * [1.1 Should Software Engineers Worry About Hardware?](https://github.com/c4arl0s/ComputerOrganization-DesignFundamentals#1-chapter-one-digital-signals-and-systems-1)
 
 
 ![Screen Shot 2020-06-05 at 15 23 34](https://user-images.githubusercontent.com/24994818/83919628-9f43fd00-a740-11ea-910f-f5257759b79e.png)
 
-# * [1.2 Non-Digital Signal]()
+# * [1.2 Non-Digital Signal](https://github.com/c4arl0s/ComputerOrganization-DesignFundamentals#1-chapter-one-digital-signals-and-systems-1)
 
 The real world is analog. When values such as temperature or weight change over time, they follow what is called a **continuous curve**. It is sufficient to say that analog values represent a continuous signal with infinitesimal resolution.
 
-# * [1.3 Digital Signals]()
+# * [1.3 Digital Signals](https://github.com/c4arl0s/ComputerOrganization-DesignFundamentals#1-chapter-one-digital-signals-and-systems-1)
 
 There is such a thing as an analog computer, a computer that processes information using analog levels of electricity or the positions of mechanical devices. Now computers represent an analog value by converting it to a number with a fixed resolution. This measurement is referred to as a **digital value**.
 
@@ -318,7 +318,7 @@ Second, if the computer does not record with enough accuracy an error may be int
 
 These effects can be reduced by increasing the resolution of the measurement and increasing the sampling rate. A discussion of this can be found in Chapter 2 in the section titled "Sampling Theory"	
 
-# * [1.4 Conversion Systems]()
+# * [1.4 Conversion Systems](https://github.com/c4arl0s/ComputerOrganization-DesignFundamentals#1-chapter-one-digital-signals-and-systems-1)
 
 The typical system used to convert an external condition such as pressure, temperature, or light intensity to a format usable by a digital system is shown in the block diagram.
 
@@ -336,7 +336,7 @@ A second benefit is that once a signal is turned into a sequence of numbs, mathe
 
 These advantages come at a price, however. As mentioned earlier, if the samples are taken too slowly, details of the analog input are missed. It the resolution of the samples is not fine enough, the signal may not be precisely represented with the signal values. Last of all, additional hardware is required to convert the signal from analog to digital
 
-# * [1.5 Representation of Digital Signals]()
+# * [1.5 Representation of Digital Signals](https://github.com/c4arl0s/ComputerOrganization-DesignFundamentals#1-chapter-one-digital-signals-and-systems-1)
 
 Digital Systems do not store numbers the way humans do. Digital systems work with numbs using millions of tiny switches called transistors. Each transistor can remember only one f two possible values, on or off. This referred to as a **binary system**.
 
@@ -354,8 +354,8 @@ Alternatively, multiple lines can be combined into a more abstract representatio
 
 Hash marks indicate invalid or changing data. This could mean that one or all of the signals are changing their values, or that due to the nature of the electronics, the values of the data signals cannot be predicted. In the later case, the system may need to wait to allow the signals to stabilize. 
 
-# * [1.6 Types of Digital Signals]()
-# * [1.6.1 Edges]()
+# * [1.6 Types of Digital Signals](https://github.com/c4arl0s/ComputerOrganization-DesignFundamentals#1-chapter-one-digital-signals-and-systems-1)
+# * [1.6.1 Edges](https://github.com/c4arl0s/ComputerOrganization-DesignFundamentals#1-chapter-one-digital-signals-and-systems-1)
 
 A single binary signal can have one of two possible transitions as shown in figure 1-11. The first one, a transition from a logic 0 to a logic 1, is called a rising edge transition. The second one, a transition from a logic 1 to a logic 0 is called a falling edge transition.
 
@@ -369,7 +369,7 @@ A binary pulse occurs when a signal changes from one value to the other for a sh
 
 There are two types of pulses. The first is called a **positive-going-pulse**, and it has an idle state of logic 0 with a short pulse to logic 1. The other one, a **negative-going pulse**, has an idle state of logic 1 with a short pulse to logic 0. Both of these signals are shown in Figure-1-12.
 
-# * [1.6.3 Non-Periodic Pulse Trains]()
+# * [1.6.3 Non-Periodic Pulse Trains](https://github.com/c4arl0s/ComputerOrganization-DesignFundamentals#1-chapter-one-digital-signals-and-systems-1)
 
 Some digital signals such as the data wires of an Ethernet link or the data and address lines of a memory interface do not have a characteristic pattern in their changes between logic 1 and logic 0. These are called **non-periodic pulse trains**
 
@@ -377,7 +377,7 @@ Some digital signals such as the data wires of an Ethernet link or the data and 
 
 Like music, the duration of the notes or the spaces between the notes can be longer or shorter. On the page, they do not look meaningful, but once the reader is given the tools to interpret the signal, he data they contain becomes clear.
 
-# * [1.6.4 Periodic Pulse Trains]()
+# * [1.6.4 Periodic Pulse Trains](https://github.com/c4arl0s/ComputerOrganization-DesignFundamentals#1-chapter-one-digital-signals-and-systems-1)
 
 Some signals act as the heartbeat to a digital systems. Periodic pulse trains is meat to synchronized events or keep processes moving.
 
@@ -387,7 +387,7 @@ Some signals act as the heartbeat to a digital systems. Periodic pulse trains is
 
 Frequency = 1 / Period [seconds]
 
-# * [1.6.5 Pulse-Width Modulation]()
+# * [1.6.5 Pulse-Width Modulation](https://github.com/c4arl0s/ComputerOrganization-DesignFundamentals#1-chapter-one-digital-signals-and-systems-1)
 
 The last measurement of a periodic waveform is the **duty cycle**. The duty cycle represents the percentage of time that a periodic signal is a logic 1. 
 
@@ -395,8 +395,10 @@ The last measurement of a periodic waveform is the **duty cycle**. The duty cycl
 
 Duty Cycle = ((logic 1 pulse duration) [seconds] / period [Seconds] ) * 100%
 
+# * [1.7 Unit Prefixes](https://github.com/c4arl0s/ComputerOrganization-DesignFundamentals#1-chapter-one-digital-signals-and-systems-1)
 
-# * [1.7 Unit Prefixes]()
+![Screen Shot 2020-06-09 at 13 44 01](https://user-images.githubusercontent.com/24994818/84187367-8f395f80-aa57-11ea-9004-5a21b5cbac9b.png)
+
 # * [1.8 What's Next?]()
 # * [Problems]()
 
