@@ -400,6 +400,11 @@ Duty Cycle = ((logic 1 pulse duration) [seconds] / period [Seconds] ) * 100%
 ![Screen Shot 2020-06-09 at 13 44 01](https://user-images.githubusercontent.com/24994818/84187367-8f395f80-aa57-11ea-9004-5a21b5cbac9b.png)
 
 # * [1.8 What's Next?]()
+
+In this chapter, we have seen how the methods that a computer uses to store and interpret values are different from the ways in which those values appear in the real world. We have also seen some of the methods used to measure and represent these digital signals.
+
+In Chapter 2 we will see how digital values are used to represent integers. This is the first major step toward understanding some of the idiosyncrasies of computing systems such as why a compiler might restrict the values of a data type from -32,768 to 32,767. In addition, it shows how some bugs occur in program due to the misuse of data types.
+
 # * [Problems]()
 
 # 2. [Chapter Two: Numbering Systems]()
