@@ -414,6 +414,26 @@ Chapter one discussed how computers remember numbers using transistors, tiny dev
 This chapter discusses some of the methods that are used to represent numbers with groups of transistors or **bits**. The reader will also be given methods for calculating the minimum and maximum values of each representation based on the number of bits in the group.
 
 # * [2.1 Unsigned Binary Counting]()
+
+The simplest form o numeric representation with bits is **unsigned binary**. When we count wpward through the positive integers using decimal, we start with a 0 in the one's place and increment a value until we reach the upper limit of a single digit, i.e. 9. At that point, we have run out of the "Symbols" we use to count, and we need to increment the next digit, the ten's place. We then reset the one's place to zero, and start the cycle again.
+
+![Screen Shot 2020-06-10 at 19 12 19](https://user-images.githubusercontent.com/24994818/84330922-54feb980-ab4e-11ea-9296-cd06592b85da.png)
+
+Figure 2-2 shows that when counting in binary, we run out of symbols quickly requiring the addition of another "place" only the second increment.
+
+![Screen Shot 2020-06-10 at 19 13 59](https://user-images.githubusercontent.com/24994818/84330983-8e372980-ab4e-11ea-9426-aefc8ba399ea.png)
+
+With 2 symbols for each bit, we have 2^n possible combinations of symbols, where n represents the number of bits.	
+
+Figure 2-3 uses 5 bits to count up to decimal 17. Examine each row where a single one position is represent in the binary number. This reveals what that position represents. For example, a binary 01000 is shown to be equivalent to a decimal 8. Therefore, the fourth bit position from the right is the 8`s position.
+
+![Screen Shot 2020-06-10 at 19 15 38](https://user-images.githubusercontent.com/24994818/84331052-c9395d00-ab4e-11ea-9d49-049aa53c66a4.png)
+
+This information will help us develop a method for converting **unsigned binary numbers** to decimal and back to **unsigned binary**.
+
+Some of you may recognize this as "base-2" math. This give us a method for indicating whic representation is being ued when writing a number down on paper. 
+
+
 # * [2.2 Binary Terminology]()
 # * [2.3 Unsigned Binary to Decimal Conversion]()
 # * [2.4 Decimal to Unsigned Binary Conversion]()
