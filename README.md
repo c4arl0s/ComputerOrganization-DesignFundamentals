@@ -408,6 +408,11 @@ In Chapter 2 we will see how digital values are used to represent integers. This
 # * [Problems]()
 
 # 2. [Chapter Two: Numbering Systems]()
+
+Chapter one discussed how computers remember numbers using transistors, tiny devices that act like switches with only two positions, on or off. A single transistor, therefore, can only remember one of two possible numbers, a one or a zero. This is not useful for anything more complex than controlling a light bulb, so for larger values, transistors are grouped together so that their combination of ones and zero can be used to represent larger numbers.
+
+This chapter discusses some of the methods that are used to represent numbers with groups of transistors or **bits**. The reader will also be given methods for calculating the minimum and maximum values of each representation based on the number of bits in the group.
+
 # * [2.1 Unsigned Binary Counting]()
 # * [2.2 Binary Terminology]()
 # * [2.3 Unsigned Binary to Decimal Conversion]()
