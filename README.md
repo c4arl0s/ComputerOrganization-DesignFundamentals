@@ -466,6 +466,11 @@ It turns out that can be represented with n bits in unsigned binary is:
 
 
 # * [2.4 Decimal to Unsigned Binary Conversion]()
+
+Converting from decimal to unsigned binary is a little more complicated, but it still is not too difficult. Once again, there is a well-defined process.
+
+![Screen Shot 2020-06-11 at 23 45 53](https://user-images.githubusercontent.com/24994818/84465879-b9e50d00-ac3d-11ea-8e5f-f82d3caac07f.png)
+
 # * [2.5 Binary Representation of Analog Values]()
 # * [2.6 Sampling Theory]()
 # * [2.7 Hexadecimal Representation]()
