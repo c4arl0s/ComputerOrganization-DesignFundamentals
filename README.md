@@ -433,8 +433,30 @@ This information will help us develop a method for converting **unsigned binary 
 
 Some of you may recognize this as "base-2" math. This give us a method for indicating whic representation is being ued when writing a number down on paper. 
 
-
 # * [2.2 Binary Terminology]()
+
+When writing values in decimal, it is common to separate the places or positions of large numbers in groups of three digits separated by commas.
+
+To begin with, a single place or position in a binary number is called a bit, short for binary digit. 
+
+Th rightmost bit, the one that represents the ones places, is called the **Least Significant Bit or LSB***.
+
+The leftmost bit, the one that represents the ones places, is called the **Most Significant Bit or MSB, 
+
+ * Nibble - A four bit binary number. (4 bit)
+ * Byte - A unit of storage of a single character, typically an eight bit (2 nibble) binary number (short for binary term)
+ * Word - Typically a sixteen bit (16 bit) (2 byte) binary number.
+ * Double Word - A thirty-two bit (32 bit) (2 word) binary number.
+
+The following are some examples of each type of binary number.
+
+Bit								1
+Nibble  					10102
+Byte							101001012
+Word 							1010010111110000
+Double Word				10100101111100001100111011101101
+
+
 # * [2.3 Unsigned Binary to Decimal Conversion]()
 # * [2.4 Decimal to Unsigned Binary Conversion]()
 # * [2.5 Binary Representation of Analog Values]()
