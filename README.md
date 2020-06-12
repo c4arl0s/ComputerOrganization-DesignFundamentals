@@ -456,8 +456,15 @@ Byte							101001012
 Word 							1010010111110000
 Double Word				10100101111100001100111011101101
 
-
 # * [2.3 Unsigned Binary to Decimal Conversion]()
+
+![Screen Shot 2020-06-11 at 23 38 07](https://user-images.githubusercontent.com/24994818/84465458-a6857200-ac3c-11ea-9820-5618d0954a20.png)
+
+It turns out that can be represented with n bits in unsigned binary is:
+
+2^n - 1    (remember to include zero)
+
+
 # * [2.4 Decimal to Unsigned Binary Conversion]()
 # * [2.5 Binary Representation of Analog Values]()
 # * [2.6 Sampling Theory]()
