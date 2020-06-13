@@ -472,6 +472,35 @@ Converting from decimal to unsigned binary is a little more complicated, but it 
 ![Screen Shot 2020-06-11 at 23 45 53](https://user-images.githubusercontent.com/24994818/84465879-b9e50d00-ac3d-11ea-8e5f-f82d3caac07f.png)
 
 # * [2.5 Binary Representation of Analog Values]()
+
+Converting unsigned (positive) integers to binary is only one of the many ways that computers represent values using binary bits. This chapter still has two more to cover, and Chapter 3 will cover even more.
+
+This section focuses on the problems and solutions of trying to map real world values such as temperature or weight from a specified range to a binary integer. 
+
+For example a computer that uses 8 bits to represent an integer is capable of representing 256 individual values from 0 to 255. Temperature, however, is a floating point value with unrealistic upper and lower limits. Can we get a computer to represent a temperature using eight bits ? The answer is yes, but it will cot us in the areas of resolution and range.
+
+![Screen Shot 2020-06-12 at 19 48 08](https://user-images.githubusercontent.com/24994818/84556023-b5742f00-ace5-11ea-9863-c93f4c1d8fb5.png)
+
+For example, does the typical bathroom scale need to measure values above 400 pounds? If not, then a digital system could use a 10-bit binary number mapped to a range fro zero to 400 pounds. A binary 00000000000 could represent zero pounds to 1111111111 could represent 400 pounds
+
+What is needed next is a method to map the values inside the range zero to 400 pounds to the binary integers in the range of 0000000000 to 1111111111. To do this, we need a linear function defining a one-to-one mapping between each binary integer and the analog value it represents. To do this, we turn to the basic math expression for a linear function.
+ 
+This function defines m as the rate of the change in y with respect to changes in x and b as the value y is set to when x equals 0. We can use this expression to map a binary integer x to an analog value y.
+
+The slope of the function, m, can be calculated by dividing the range of analog values by the number of intervals defined by the n-bit binary integer. The number of intervals defined by the n-ñbit binary integer is equal to the upper limit of that binary number if it were being used as an unsigned integer 2^n ´- 1.
+
+![Screen Shot 2020-06-12 at 19 50 08](https://user-images.githubusercontent.com/24994818/84556056-f2402600-ace5-11ea-9c82-a1b39a1c99f4.png)
+
+![Screen Shot 2020-06-12 at 19 50 39](https://user-images.githubusercontent.com/24994818/84556063-0126d880-ace6-11ea-8a53-544ca4fa8169.png)
+
+Lets go back to our example of the kitchen scale where the maximum analog value is 400 pounds while the minimum is zero pounds. If a 10-bit binary value is used to represent this analog value, then the number of intervals of the binary integer is 2^10-1 = 1023
+
+m = (400 pounds - 0 pounds) / 1023 binary increments = 0.391 pounds / binary increment
+
+That means each time the binary number increments 0110110010 goes to 0110110011 , it represents an increment in the analog value of 0.391 pounds. 
+
+In this case you use 10 bits, now see the example whe the increment per each binary increent is required. [See example] 
+
 # * [2.6 Sampling Theory]()
 # * [2.7 Hexadecimal Representation]()
 # * [2.8 Binary Coded Decimal]()
