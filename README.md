@@ -526,6 +526,19 @@ If a signal's frequency is faster than the sampling rate, then information will 
 To avoid **aliasing**, the rate at which samples are taken must be more than twice as fast as the highest frequency you wish to capture. This is called the **Nuquist Theorem**.
 
 # * [2.7 Hexadecimal Representation]()
+
+To make the binary representation of numbers easier on us humans, there is a shorthand representation for binary numbers. It begins by partitioning a binary numbers into its nibbles starting at the least significant bit (LSB). 
+
+![Screen Shot 2020-06-15 at 9 45 24](https://user-images.githubusercontent.com/24994818/84671402-f5593300-aeec-11ea-8571-03d6d2b28168.png)
+
+![Screen Shot 2020-06-15 at 9 46 26](https://user-images.githubusercontent.com/24994818/84671517-19b50f80-aeed-11ea-89d9-3b224a04ae99.png)
+
+![Screen Shot 2020-06-15 at 9 47 03](https://user-images.githubusercontent.com/24994818/84671586-2e91a300-aeed-11ea-86e2-67d0e5aa5285.png)
+
+
+Hexadecimal provides humans with a reliable, short-hand method of writing large binary numbers.
+
+
 # * [2.8 Binary Coded Decimal]()
 # * [2.9 Gray Codes]()
 # * [2.10 What's Next?]()
