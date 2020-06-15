@@ -1,21 +1,21 @@
 # Computer Organization and Design Fundamentals
 
-# 1. [Chapter One: Digital Signals and Systems](https://github.com/c4arl0s/ComputerOrganization-DesignFundamentals#1-chapter-one-digital-signals-and-systems-1)
-# 2. [Chapter Two: Numbering Systems]()
-# 3. [Chapter Three: Binary Math and Signed Representations]()
-# 4. [Chapter Four: Logic Functions and Gates]()
-# 5. [Chapter Five: Boolean Algebra]()
-# 6. [Chapter Six: Standard Boolean Expression Formats]()
-# 7. [Chapter Seven: Karnaugh Maps]()
-# 8. [Chapter Eight: Combinational Logic Applications]()
-# 9. [Chapter Nine: Binary Operation Applications]()
-# 10.[ Chapter Ten: Memory Cells]()
-# 11.[ Chapter Eleven: State Machines]()
-# 12.[ Chapter Twelve: Memory Organization]()
-# 13.[ Chapter Thirteen: Memory Hierarchy]()
-# 14.[ Chapter Fourteen: Serial Protocol Basics]()
-# 15.[ Chapter Fifteen: Introduction to Processor Architecture]()
-# 16.[ Chapter Sixteen: Intel 80x86 Base Architecture]()
+1. [Chapter One: Digital Signals and Systems](https://github.com/c4arl0s/ComputerOrganization-DesignFundamentals#1-chapter-one-digital-signals-and-systems-1)
+2. [Chapter Two: Numbering Systems]()
+3. [Chapter Three: Binary Math and Signed Representations]()
+4. [Chapter Four: Logic Functions and Gates]()
+5. [Chapter Five: Boolean Algebra]()
+6. [Chapter Six: Standard Boolean Expression Formats]()
+7. [Chapter Seven: Karnaugh Maps]()
+8. [Chapter Eight: Combinational Logic Applications]()
+9. [Chapter Nine: Binary Operation Applications]()
+10.[ Chapter Ten: Memory Cells]()
+11.[ Chapter Eleven: State Machines]()
+12.[ Chapter Twelve: Memory Organization]()
+13.[ Chapter Thirteen: Memory Hierarchy]()
+14.[ Chapter Fourteen: Serial Protocol Basics]()
+15.[ Chapter Fifteen: Introduction to Processor Architecture]()
+16.[ Chapter Sixteen: Intel 80x86 Base Architecture]()
 
 # 1. [Chapter One: Digital Signals and Systems](https://github.com/c4arl0s/ComputerOrganization-DesignFundamentals#computer-organization-and-design-fundamentals)
  * [1.1 Should Software Engineers Worry About Hardware?](https://github.com/c4arl0s/ComputerOrganization-DesignFundamentals#-11-should-software-engineers-worry-about-hardware)
@@ -499,9 +499,32 @@ m = (400 pounds - 0 pounds) / 1023 binary increments = 0.391 pounds / binary inc
 
 That means each time the binary number increments 0110110010 goes to 0110110011 , it represents an increment in the analog value of 0.391 pounds. 
 
-In this case you use 10 bits, now see the example whe the increment per each binary increent is required. [See example] 
+In this case you use 10 bits, now see the example whe the increment per each binary increent is required. [See example]
+
+In some cases, the lower limit might be something other than 0. This is important especially if better accuracy is required
+
+b = minimum analog value
+
+![Screen Shot 2020-06-15 at 9 22 37](https://user-images.githubusercontent.com/24994818/84668938-d7d69a00-aee9-11ea-800d-c3c09de734ff.png)
 
 # * [2.6 Sampling Theory]()
+
+In general, an n-bit analog-to-digital converter divides the analog range into 2^n-1 increments.
+
+![Screen Shot 2020-06-15 at 9 25 46](https://user-images.githubusercontent.com/24994818/84669200-369c1380-aeea-11ea-8695-507217c8bcba.png)
+
+The figure shows how the addition of a bit can improve the resolution of the values represented by the binary integers.
+
+To improve the signal's representation, the rate at which the samples are taken, the **sampling rate**, needs to be increased. 
+
+There is also a chance of missing a higher frequency because the sampling rate is too slow. This is called **aliasing**, and there are examples of it in everyday life.
+
+If a signal's frequency is faster than the sampling rate, then information will be lost, and the collected data will never be able to duplicate the original
+
+![Screen Shot 2020-06-15 at 9 31 50](https://user-images.githubusercontent.com/24994818/84669929-0dc84e00-aeeb-11ea-89d8-5be9a7ea8896.png)
+
+To avoid **aliasing**, the rate at which samples are taken must be more than twice as fast as the highest frequency you wish to capture. This is called the **Nuquist Theorem**.
+
 # * [2.7 Hexadecimal Representation]()
 # * [2.8 Binary Coded Decimal]()
 # * [2.9 Gray Codes]()
