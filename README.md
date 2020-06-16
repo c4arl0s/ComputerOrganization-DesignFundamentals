@@ -538,8 +538,23 @@ To make the binary representation of numbers easier on us humans, there is a sho
 
 Hexadecimal provides humans with a reliable, short-hand method of writing large binary numbers.
 
-
 # * [2.8 Binary Coded Decimal]()
+
+Binary Coded Decimal allows for fast conversion to binary of integers that do not require mathematical operations.
+
+As in hex, each decimal digit represent a nibble of the binary equivalent Table 2-2 shows the conversion between each decimal digit and the binary equivalent.
+
+![Screen Shot 2020-06-16 at 17 48 57](https://user-images.githubusercontent.com/24994818/84835656-ae0c9880-aff9-11ea-982c-1ada5b81c4f2.png)
+
+It is important to note that there is no algorithmic conversion between BCD and decimal. BCD is only a method for representing decimal numbers in binary.
+
+BCD is used frequently in financial applications due to legal requirements that decimal values be **exactly** represented. 
+
+ * It is more complex to do mathematical operations
+ * May require more memory for storage
+ * Implementations could use this binary code to use signed numbers.
+
+
 # * [2.9 Gray Codes]()
 # * [2.10 What's Next?]()
 # * [Problems]()
