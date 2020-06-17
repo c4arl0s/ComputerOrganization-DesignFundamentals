@@ -556,6 +556,28 @@ BCD is used frequently in financial applications due to legal requirements that 
 
 
 # * [2.9 Gray Codes]()
+
+The use of binary counting sequences is common in digital applications. For example an n-bit binary value can be used to identify the position of a rotating shaft as being within one of 2^n different arcs.
+
+As the shaft turns, a sensor can detect which of the shaft's arcs it is aligned with by reading a digital value and associating it with a specific arc. By remembering the previous position and timing the changes between positions, a processor can also compute speed and direction.
+
+![Screen Shot 2020-06-17 at 13 31 37](https://user-images.githubusercontent.com/24994818/84935830-ea460480-b09e-11ea-9a19-623320f4d0d7.png)
+
+![Screen Shot 2020-06-17 at 13 32 15](https://user-images.githubusercontent.com/24994818/84935860-f92cb700-b09e-11ea-8b2a-b0c431e65af0.png)
+
+There is a potential problem with this methods o encoding. It is possible to read the sensor at instant when more than one gap is opening or closing between its light source and sensor. When this happens, some of the bit changes may be detected while others are not. If this happens, an erroneous measurement may occur.
+
+For example, if the shaft shown above turns clockwise toward position 101 = 5, but at the instant when the value read will be 111 = 7, indicating counter-clockwise rotation.
+
+To solve this problem, alternate counting sequences referred to as **Gray Code** are used. These sequences have only one bit change between values. For example, the values assigned to the arcs of the above shaft could follow the sequence 000, 001, 011, 010, 110, 111, 101, 100. **This sequence is not correct numerically, but as the shaft turns, only one bit will change as the shaft turns from one position to the next**.
+
+![Screen Shot 2020-06-17 at 13 42 51](https://user-images.githubusercontent.com/24994818/84936827-74db3380-b0a0-11ea-9853-ac464de19042.png)
+
+![Screen Shot 2020-06-17 at 13 43 20](https://user-images.githubusercontent.com/24994818/84936867-86bcd680-b0a0-11ea-9391-10640aa31ec9.png)
+
+Notice that exactly one bit changes in the Gray code from one row to the next and from the bottom row to the top row.
+
+
 # * [2.10 What's Next?]()
 # * [Problems]()
 
