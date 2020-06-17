@@ -577,12 +577,29 @@ To solve this problem, alternate counting sequences referred to as **Gray Code**
 
 Notice that exactly one bit changes in the Gray code from one row to the next and from the bottom row to the top row.
 
-
 # * [2.10 What's Next?]()
+
+In this chapter, we have covered the difference methods of representing values, specifically positive integers, using digital circuitry. In addition to counting integers, the issues surrounding the conversion of analog or "real world" values to digital were examined along with some of the problems encountered when sampling. Finally, two methods of binary representation were presented: **Hexadecimal** and **BCD**.
+
+Chapter 3 examines the special needs surrounding the digital representation of addition, subtraction, and floating-point values. It introduces the operation of the processor in handling some arithmetic functions.
+
 # * [Problems]()
 
 # 3. [Chapter Three: Binary Math and Signed Representations]()
+
+Representing numbers with bits is one thing. Doing something with them is an entirely different matter. This chapter discusses some of the basic mathematical operations that computers perform on binary numbers along with the binary representations that support those operations. These concepts will help programmers better understand the limitations of doing math with a processor, and thereby allow them to better handle problems such as the upper and lower limits of variable types, mathematical overflow, and type casting.
+
 # * [3.1 Binary Addition]()
+
+![Screen Shot 2020-06-17 at 17 56 10](https://user-images.githubusercontent.com/24994818/84958882-e678a900-b0c3-11ea-81d4-520065321b73.png)
+
+![Screen Shot 2020-06-17 at 17 57 56](https://user-images.githubusercontent.com/24994818/84958979-16c04780-b0c4-11ea-945e-bf9d220eb46b.png)
+
+![Screen Shot 2020-06-17 at 17 58 17](https://user-images.githubusercontent.com/24994818/84959006-2475cd00-b0c4-11ea-86f2-0081eb264abb.png)
+
+![Screen Shot 2020-06-17 at 17 59 10](https://user-images.githubusercontent.com/24994818/84959084-496a4000-b0c4-11ea-9d0e-15964b586d95.png)
+
+
 # * [3.2 Binary Subtraction]()
 # * [3.3 Binary Complements]()
 # * [3.3.1 One's Complement]()
