@@ -599,8 +599,22 @@ Representing numbers with bits is one thing. Doing something with them is an ent
 
 ![Screen Shot 2020-06-17 at 17 59 10](https://user-images.githubusercontent.com/24994818/84959084-496a4000-b0c4-11ea-9d0e-15964b586d95.png)
 
-
 # * [3.2 Binary Subtraction]()
+
+![Screen Shot 2020-06-18 at 12 56 54](https://user-images.githubusercontent.com/24994818/85055474-39ee0400-b163-11ea-9802-e48cc1fe9457.png)
+
+![Screen Shot 2020-06-18 at 12 58 23](https://user-images.githubusercontent.com/24994818/85055592-686bdf00-b163-11ea-9e01-70635de0d2c3.png)
+
+2^0 column: Starting at the rightmost bit, is subtracted from 1 giving us zero.
+2^1 column: 0 is subtracted from 1 resulting in 1
+2^2 column: 1 is subtracted from 0. Here we need to borrow from the next highest bit. The next highest digit is 1, so we subtract 1 from it and add 10 to this digit. It is shown a small 1 before the 0. This makes our subtraction 10-1 which is equals to 1. It means 2-1 = 1
+2^3 column: After the borrow, we have 0-0 which equals 0. 
+2^4 column: 1 - 1 = 0
+2^5 column: 1 - 0 = 0
+2^6 column: we find 0 - 1 again. We need to make a borrow again in the third column from the left, but the 2^7 position of the minuend is zero and does not have anything to borrow. Therefore, the next highest digit of the minuend, the 2^8 position, is borrowed from. The borrow is then cascaded down until it reaches the 2^6 position so that the subtraction may be performed.
+
+![Screen Shot 2020-06-18 at 13 48 29](https://user-images.githubusercontent.com/24994818/85060181-69ecd580-b16a-11ea-9dfe-f448cd2650d4.png)
+
 # * [3.3 Binary Complements]()
 # * [3.3.1 One's Complement]()
 # * [3.3.2 Two's Complement]()
