@@ -620,6 +620,18 @@ Representing numbers with bits is one thing. Doing something with them is an ent
 In decimal arithmetic, every number has an additive complement i.e., a value that when added to the original number results in a zero. For example, 5 and -5 are additive complements because 5+(-5)=0. This section describes the two primary methods used to calculate the complements of a binary value.
 
 # * [3.3.1 One's Complement]()
+
+Flip each bit in the original value
+
+![Screen Shot 2020-06-19 at 18 40 28](https://user-images.githubusercontent.com/24994818/85186048-66397b80-b25c-11ea-8715-bfed77889d89.png)
+
+The 1's complement of a value is useful for some types of digital functions, but it does not provide much of a benefit if you are looking for the additive complement. See whats happen when we add a value to its 1's complement
+
+![Screen Shot 2020-06-19 at 18 43 38](https://user-images.githubusercontent.com/24994818/85186121-cd573000-b25c-11ea-855d-14a73293f148.png)
+
+If the two values were additive complements, the result should be zero, right ? Well, that takes us to the 2's complement.
+
+
 # * [3.3.2 Two's Complement]()
 # * [3.3.3 Most Significant Bit as a Sign Indicator]()
 # * [3.3.4 Signed Magnitude]()
