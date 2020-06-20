@@ -633,6 +633,37 @@ If the two values were additive complements, the result should be zero, right ? 
 
 
 # * [3.3.2 Two's Complement]()
+
+
+The result of adding an n-bit number to its one's complement is always an n-bit number with ones in every position. If we add 1 to that result, our new value is an n-bit number with zeros in every position and an overflow or carry to the next highest position, The (n+1)^th column which corresponding to 2^n. 
+
+For our 8-bit example above, the result of adding 10010110 to 01101001 is 1111111. Adding 1 to this number gives us 00000000 with and overflow carry of 1 to the ninth or 2^8 column. If we restrict ourselves to 8 bits, this overflow carry canbe ignore.
+
+So, the 2's complement of a value is found by firts taking the 1's complement, then incrementing that result by 1. 
+
+![Screen Shot 2020-06-19 at 18 43 38](https://user-images.githubusercontent.com/24994818/85186316-eca28d00-b25d-11ea-926c-03141a2dfa11.png)
+
+Then we can test
+
+![Screen Shot 2020-06-19 at 18 52 11](https://user-images.githubusercontent.com/24994818/85186334-03e17a80-b25e-11ea-9a34-08d577232cfe.png)
+
+Another example 88 - 10 = 78
+
+88 	-	01011000
+-10 -	11110110
+
+![Screen Shot 2020-06-19 at 18 56 29](https://user-images.githubusercontent.com/24994818/85186436-98e47380-b25e-11ea-97cf-31895ccf1e62.png)
+
+result = 2^6+2^3+2^2+2^1 = 78
+
+![Screen Shot 2020-06-19 at 18 59 11](https://user-images.githubusercontent.com/24994818/85186497-f973b080-b25e-11ea-9480-32741f85b6be.png)
+
+This match the result for the previous example.
+
+Also remember, is we want to obtain the negative number of (-5) is five, so taking the two's complement you get 5.
+
+![Screen Shot 2020-06-19 at 19 01 27](https://user-images.githubusercontent.com/24994818/85186541-4b1c3b00-b25f-11ea-84fd-0bb64b6e007a.png)
+
 # * [3.3.3 Most Significant Bit as a Sign Indicator]()
 # * [3.3.4 Signed Magnitude]()
 # * [3.3.5 MSB and Number of Bits]()
