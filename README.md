@@ -682,6 +682,13 @@ Special Cases ?
 - The larges positive number represented in 2's complement has an MSB of 0 with all the remaining bits set to one. This value equals [2^(n-1) - 1]. Therefore, since 2^(n-1) is greater than [2^(n-1) -1], we cansee that there s no positive equivalent to the binary number 1000...000.
 
 # * [3.3.4 Signed Magnitude]()
+
+A second, less useful way to represent positive and negative binary numbers is to take the MSB and use it as a sign but, much like a plus or minus sign, and leave the remaining bits to represent the magnitude.
+
+![Screen Shot 2020-06-21 at 18 17 00](https://user-images.githubusercontent.com/24994818/85237300-6caa2d80-b3eb-11ea-873e-66c2c4fe03b7.png)
+
+
+
 # * [3.3.5 MSB and Number of Bits]()
 # * [3.3.6 Issues Surrounding the Conversion of Binary Numbers. 52 ]()
 # * [3.3.7 Minimums and Maximums]()
