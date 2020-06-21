@@ -665,6 +665,22 @@ Also remember, is we want to obtain the negative number of (-5) is five, so taki
 ![Screen Shot 2020-06-19 at 19 01 27](https://user-images.githubusercontent.com/24994818/85186541-4b1c3b00-b25f-11ea-84fd-0bb64b6e007a.png)
 
 # * [3.3.3 Most Significant Bit as a Sign Indicator]()
+
+MSB of a value can be used to indicate whether a number is positive or negative and is called a **sign bit**.
+
+> A binary value with a 0 in the MSB position is considered positive and a binary value with a 1 in the MSB position is considered negative.
+
+Since the MSB is being used to indicate the sign of a signed binary number, it cannot be used to represent a power of 2. If a number is said to represent a 2's complement value, only n-1 of its n bits can be used to determine the magnitude since the MSB is used for the sign.
+
+This cuts in half the number of positive integers n bits can represent.
+
+Special Cases ?
+
+- Binary number with all zeros is equal to a decimal 0.
+- Taking the negative of zero still gives us zero.
+- In this section on minimums and maximums, we will see that an n-bit value with an MSB equal to one and all other bits equal to zero is a negative number, specifically, -2^(n-1). 
+- The larges positive number represented in 2's complement has an MSB of 0 with all the remaining bits set to one. This value equals [2^(n-1) - 1]. Therefore, since 2^(n-1) is greater than [2^(n-1) -1], we cansee that there s no positive equivalent to the binary number 1000...000.
+
 # * [3.3.4 Signed Magnitude]()
 # * [3.3.5 MSB and Number of Bits]()
 # * [3.3.6 Issues Surrounding the Conversion of Binary Numbers. 52 ]()
