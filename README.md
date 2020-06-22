@@ -687,9 +687,10 @@ A second, less useful way to represent positive and negative binary numbers is t
 
 ![Screen Shot 2020-06-21 at 18 17 00](https://user-images.githubusercontent.com/24994818/85237300-6caa2d80-b3eb-11ea-873e-66c2c4fe03b7.png)
 
-
-
 # * [3.3.5 MSB and Number of Bits]()
+
+Since the MSB is necessary to indicate the sign of a binary value, it is vital that we know how many bits a particular number is being represented with so we know exactly where the MSB is. In other words, the leading zeros of a binary value may have been removed making it look like the binary value is negative since it starts with a one.
+
 # * [3.3.6 Issues Surrounding the Conversion of Binary Numbers. 52 ]()
 # * [3.3.7 Minimums and Maximums]()
 # * [3.4 Floating Point Binary]()
