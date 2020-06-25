@@ -692,6 +692,17 @@ A second, less useful way to represent positive and negative binary numbers is t
 Since the MSB is necessary to indicate the sign of a binary value, it is vital that we know how many bits a particular number is being represented with so we know exactly where the MSB is. In other words, the leading zeros of a binary value may have been removed making it look like the binary value is negative since it starts with a one.
 
 # * [3.3.6 Issues Surrounding the Conversion of Binary Numbers. 52 ]()
+
+Since computers don't use an infinite number of bits to represent values, the software must know two things before it can interpret a binary value: the number of bits and the type of binary representation being used. This usually is confusing for the novice.
+
+![Screen Shot 2020-06-25 at 15 59 32](https://user-images.githubusercontent.com/24994818/85794897-fb28f280-b6fc-11ea-95b2-9095f53cd13d.png)
+
+{insert explanation about another conversion}
+
+This discussion shows that it is possible for a binary pattern of ones and zeros to have three interpretations. It All depends on how the computer has been told to interpret the value
+
+In a programming language such as C, the way in which a computer treats a variable depends on how it is declared. Variables declared as **unsigned int** are stored in **unsigned binary notation**. Variables declared as **int** are treated as either **2's complement** or **signed magnitud depending on the processor and/or compiler.
+
 # * [3.3.7 Minimums and Maximums]()
 # * [3.4 Floating Point Binary]()
 # * [3.5 Hexadecimal Addition]()
