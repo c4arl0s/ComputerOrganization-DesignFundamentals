@@ -704,6 +704,26 @@ This discussion shows that it is possible for a binary pattern of ones and zeros
 In a programming language such as C, the way in which a computer treats a variable depends on how it is declared. Variables declared as **unsigned int** are stored in **unsigned binary notation**. Variables declared as **int** are treated as either **2's complement** or **signed magnitud depending on the processor and/or compiler.
 
 # * [3.3.7 Minimums and Maximums]()
+
+When using a finite number of bit positions to store information, it is vital to be able to determine the minimum and maximum values that each binary can handle. Failure to do this might result in bugs in the software you create. This section calculates the minimum and maximum values for each of the three representations discussed in this and the previous chapter using a fixed number of bits, n.
+
+Let's begin with the most basic representation, **unsigned binary**. The smallest valye that cn be represented with **unsigned binary representation** ocurrs when all the bits equal to zero. Conversion from binary to decimal results 0+0+...+0=0, Therefore, for an n bit number
+
+Minimum n-bit unsigned binary number = 0
+
+The largest value that can be represented with unsigned binary representation is reached when all n bits equal to one. When we convert this value from binary to decimal, we get 2^(n-1) + 2^(n-2)+...+2^0. As was shown in Chapter 2, adding one to this expression results in 2^n.
+
+Therefore, for an n-bit unsigned binary numberm the maximum is:
+
+Maximum n-bit unsigned binary number = 2^n - 1
+
+And so on.
+
+![Screen Shot 2020-06-25 at 16 18 05](https://user-images.githubusercontent.com/24994818/85796400-83a89280-b6ff-11ea-8a0f-21f5cd6ea206.png)
+
+So **why can 8-bit signed magnitud only represents 255 possible values instead of 256? It is because in sgned magnityd 00000000 and 1000000 both represent the same number, a decimal 0.
+
+
 # * [3.4 Floating Point Binary]()
 # * [3.5 Hexadecimal Addition]()
 # * [3.6 BCD Addition]()
