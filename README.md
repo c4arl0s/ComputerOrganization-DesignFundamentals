@@ -765,6 +765,24 @@ There are, however, some special cases. These are as follows:
 
 
 # * [3.5 Hexadecimal Addition]()
+
+In decimal does not require a carry until the result goes beyond 9. Hexadecimal numbers (base 16) can be added using the same method. 
+
+![Screen Shot 2020-06-28 at 20 36 57](https://user-images.githubusercontent.com/24994818/85964402-2b7fc380-b97f-11ea-81f9-9b86fc7f8f8c.png)
+
+For example, in decimal, adding 5 and 7 results in 2 with a carry to the next highest position. In hexadecimal, however, 5 added to 7 dos not go beyond the range of a single digit. In this case, 5+7=(C)16 with no carry. It is not until a result greater than (F)16 is reached (a decimal (15)10) that a carry is necessary.
+
+Example
+
+Add (3DA32)16 to (4292F)16
+
+|   | 1 | 1 |   | 1 |   |
+|---|---|---|---|---|---|
+|   | 3 | D | A | 3 | 2 |
+| + | 4 | 2 | 9 | 2 | F |
+|   | 8 | 0 | 3 | 6 | 1 |
+
+
 # * [3.6 BCD Addition]()
 # * [3.7 Multiplication and Division by Powers of Two]()
 # * [3.8 Easy Decimal to Binary Conversion Trick]()
