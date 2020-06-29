@@ -721,10 +721,49 @@ And so on.
 
 ![Screen Shot 2020-06-25 at 16 18 05](https://user-images.githubusercontent.com/24994818/85796400-83a89280-b6ff-11ea-8a0f-21f5cd6ea206.png)
 
-So **why can 8-bit signed magnitud only represents 255 possible values instead of 256? It is because in sgned magnityd 00000000 and 1000000 both represent the same number, a decimal 0.
+So **why can 8-bit signed magnitude only represents 255 possible values instead of 256? It is because in signed magnitude 00000000 and 1000000 both represent the same number, a decimal 0.
 
 
 # * [3.4 Floating Point Binary]()
+
+Binary numbers can also ave decimal points, and to show you how, we will once again begin with decimal numbers. For decimal numbers with decimal points, the standard way to represent the digits to the right o the decimal points is to continue the powers of ten in descending order starting with -1 where 10^(-1) = 1/10 = 0.1. That means that the number 6.5342 has 5 increments of 10^(-1) (tenths), 3 increments of 10^(-2) (hundredths), 4 increments of 10^(-3) (thousandths), and 2 increments of 10^(-4) (tn-thousandths) The table below shows this graphically.
+
+| Exponent       | 3    | 2   | 1  | 0 | -1  | -2   | -3    | -4      |
+|----------------|------|-----|----|---|-----|------|-------|---------|
+| Position Value | 1000 | 100 | 10 | 1 | 0.1 | 0.01 | 0.000 | 0.00001 |
+| Sample Values  | 0    | 0   | 0  | 6 | 5   | 3    | 4     | 2       |
+
+Binary representation of real numbers works the same way except that each position represents a power of two, not a power of ten
+
+| Exponent       | 2 | 1 | 0 | -1  | -2   | -3    | -4    | -5      |
+|----------------|---|---|---|-----|------|-------|-------|---------|
+| Position Value | 4 | 2 | 1 | 0.5 | 0.25 | 0.125 | 0.065 | 0.03125 |
+| Sample Values  | 0 | 1 | 0 | 0   | 1    | 1     | 0     | 1       |
+
+Computers, use a form of binary more like scientific notation to represent floating-point or real numbers.
+
+The IEEE standard 754 is used to represent real numbers on the majority of contemporary computer systems. It utilizes a 32-bit pattern to represent single-precision numbers and a 64-bit pattern to represent double-precision numbers. Each of these bit patterns is divided into three parts, each part representing a different component of the real number being stored.
+
+
+![Screen Shot 2020-06-28 at 6 30 17](https://user-images.githubusercontent.com/24994818/85946267-e91b9f80-b908-11ea-9ded-c45cba8494f0.png)
+
+Both formats work the same differing only by the number of bits used to represent each component of the real number. In general, the components of the single-precision format are substited into Equation 3.7 where the sign of the value is determined by the sign bit (0 - positive value, 1 - negative value). Note that E is in unsigned binary representation.
+
+(+/-)1.Fx2^(E-127)
+
+
+for double-precision values
+
+(+/-)1.Fx2^(E-127)
+
+In both cases, F is preceded with an implied '1' and a binary point.
+There are, however, some special cases. These are as follows:
+
+- Positive, E=255, F=0: represents positive infinite;
+- Negative, E=255, F=0: represents negative infinite; and 
+- Positive or negative, E=0, F=0; represents zero.
+
+
 # * [3.5 Hexadecimal Addition]()
 # * [3.6 BCD Addition]()
 # * [3.7 Multiplication and Division by Powers of Two]()
