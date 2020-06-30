@@ -784,6 +784,19 @@ Add (3DA32)16 to (4292F)16
 
 
 # * [3.6 BCD Addition]()
+
+When we introduced Binary Coded Decimal numbers, we said that the purpose of these numbers was to provide a quick conversion to binary that would not be used in mathematical functions. It turns out, however, that BCD numbers can be added too, there is just an additional step that occurs when each column of digits is added.
+
+When two BCD numbers are added, the digits 1010, 1011, 1100, 1101, 1110 and 1111 must be avoided. This is done by adding an additional step anytime the binary addition of two nibbles results in one of these illegal values or if a carry is generated. When this happens, the invalid result is corrected by adding 6 to skip over the illegal values:
+
+For example:
+
+![Screen Shot 2020-06-29 at 19 02 54](https://user-images.githubusercontent.com/24994818/86067819-592a4280-ba3b-11ea-9f5e-3781a4914f63.png)
+
+This step is also necessary if a carry results from a BCD addition.
+
+![Screen Shot 2020-06-29 at 19 03 02](https://user-images.githubusercontent.com/24994818/86067822-5a5b6f80-ba3b-11ea-8dad-47c36531e207.png)
+
 # * [3.7 Multiplication and Division by Powers of Two]()
 # * [3.8 Easy Decimal to Binary Conversion Trick]()
 # * [3.9 Arithmetic Overflow]()
