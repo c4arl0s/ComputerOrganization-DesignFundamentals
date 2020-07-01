@@ -798,6 +798,36 @@ This step is also necessary if a carry results from a BCD addition.
 ![Screen Shot 2020-06-29 at 19 03 02](https://user-images.githubusercontent.com/24994818/86067822-5a5b6f80-ba3b-11ea-8dad-47c36531e207.png)
 
 # * [3.7 Multiplication and Division by Powers of Two]()
+
+Due to factors to be examined later on this book, multiplication and division is a time-intensive operation for processors. Therefore, programmers and compilers have a trick they use to divide or multiply binary by powers of two. Examine Table 3-3 to see if you can find a pattern in the multiples of two of the binary number (1001)2.
+
+![Screen Shot 2020-06-30 at 18 25 25](https://user-images.githubusercontent.com/24994818/86186641-35303500-baff-11ea-830a-2dba1c6de54d.png)
+
+Note that multiplying by two has the same effect as shifting all of the bits one position to the left. Similarly, a division by two is accomplished by **a right shift one position**. This is similar to moving a decimal point right or left when multiplying or dividing a decimal number by a power of ten.
+
+Since a shift operation is significantly faster than a multiply or divide operation, compilers will always substitute a shift operation when a program calls for a multiply or divide by a power of two. For example, a division by 16 = 2^4 is equivalent to a right shift by 4 bit positions.
+
+This works for all positive binary representations of integers and real numbers as well as 2's complement representation of negative numbers. Care must be taken in a few instances in order to maintain the data's integrity.
+
+First, carefully watch the bits that are shifted out to verify that data ins not being lost. If during a left shift (multiplication), a one is shifted out of an unsigned binary value or the MSB of 2's complement number changes, then you have gone beyond the range of values for that number of bits. If during a right shift (division), a one is shifted out of an integer value, then a decimal value has been truncated.
+
+For negative 2's complement values, there is an additional concern. Since the MSB is a sign bit,if we fill in the empty bits coming in from the left with zeros when performing  right shift, then a negative number has been turned into a positive number. To avoid this, always duplicate the sign bit in the MSB for each right shift of 2's complement value
+
+![Screen Shot 2020-06-30 at 18 38 32](https://user-images.githubusercontent.com/24994818/86187228-ec797b80-bb00-11ea-9b5c-3cef7b15d942.png)
+
+This operation can be used for some multiplications by constants other than powers of two. For example, if a processor needed to multiply a value x by 10, it could first multiply x by 2 (a single left shift), then multiply x by 8 ( a left shift by three bit positions=, then add the two shifted values together. This would still be a time savings over a multiplication.
+
+x * 10 = x * (2 + 8) = x *2 + x * 8
+
+A bit shift is easily accomplish in hight-level programming languages such as C. In C, the operator used to perform a left shift is '<<' while  a right shift is '>>'. Place the variable to be shifted to the left of the operator and to the right of the operator, enter the number of positions to shift. Some sample C codeis shown bellow.
+
+```c
+result = iVal << 3 // set result equal to iVal shiften left 3 places
+result = iVal >> 4 // set result equal to iVal shiften right 4 places.
+```
+
+The first line of code shifts iVal left three positions before putting the new value into **result**. This equivalent to multiplying iVal by 2^3 = 8. The second line shifts iVal right 4 positions which has the same effect as an integer divide by 2^4 = 16.
+
 # * [3.8 Easy Decimal to Binary Conversion Trick]()
 # * [3.9 Arithmetic Overflow]()
 # * [3.10 What's Next?]()
