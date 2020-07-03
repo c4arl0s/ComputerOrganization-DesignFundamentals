@@ -846,6 +846,27 @@ Listing the remainders by reversing the order in which they were generatde gives
 Woow !
 
 # * [3.9 Arithmetic Overflow]()
+
+In Section 3.3, the carry was ignored when two 2's complement values were added. This is not always the case. **For some numbering systemsl, a carry is an indication that an error has occured**.
+
+An arithmetic overflow error occurs when two numbers are added and the result falls outside the valid range of the binary representation being used. For example the numbers 200 and 175 can be representated in 8-bit unsigned binary notation. The result of their addition, however, 375, is not. Therefore, the following 8-bit binary addition (200+175) results in an error.
+
+![Screen Shot 2020-07-03 at 10 29 13](https://user-images.githubusercontent.com/24994818/86482708-1c4e9c00-bd18-11ea-9c96-f9019c9b890f.png)
+
+Rememver that the result must have the same bit count as the sources, and in this case, the 8-bit unsigned binary result 01110111 equals 119, not 375.
+
+When adding unsigned binary values, there is a simple way to determine if an arithmetic overflow has ocuured. **In unsigned binary addition, if a carry is produced from the column representing the MSBs thereby requiring another bit for the representation, an overflow has occured**.
+
+**In 2's complement addition, there is a different method for determining when an arithmetic overflow has occured**. To beging with, remember that an arithmetic overflow occurs when the result falls outside the minimyum and maximum values of the representation. In the case of 2's complement representation, those limits are defined by Equations 3.3 and 3.4.
+
+The only way that this can happen is if two numbers with the sam sign are added togther. It is impossible for the addition of two numbers with different signs to reuslt in a value outside of the range of 2's complement representation.
+
+when two numbers of the same sign are added together, however, there is a simple way to determine if an error has occrued. **If the result of the addition has the opposite sign of the two numbers being added, then the result is in error**. In other words, if the addition of two positive resulted in a negative number, or if the addition of two negative numbers reslted in a positive number, there were not enough bits in the representation to hold the result. The xample below presents one possible case:
+
+![Screen Shot 2020-07-03 at 10 45 05](https://user-images.githubusercontent.com/24994818/86483724-4608c280-bd1a-11ea-8f32-70b81d01b590.png)
+
+If this had been done assuming unsigned notation, the result of 152 would have been fine because no carry was generated. From equation 3.4, however, we see that the largest value that 8-bit 2's complement representation can hold is 2^(8-)-1 = 127. Since 152 is greater than 127, it is outside the range of 8-bit 2`s complement representation. In 2's complement representation, the bit pattern 10011000 actually represents -104. 
+
 # * [3.10 What's Next?]()
 # * [Problems]()
 
