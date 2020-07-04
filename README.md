@@ -868,6 +868,12 @@ when two numbers of the same sign are added together, however, there is a simple
 If this had been done assuming unsigned notation, the result of 152 would have been fine because no carry was generated. From equation 3.4, however, we see that the largest value that 8-bit 2's complement representation can hold is 2^(8-)-1 = 127. Since 152 is greater than 127, it is outside the range of 8-bit 2`s complement representation. In 2's complement representation, the bit pattern 10011000 actually represents -104. 
 
 # * [3.10 What's Next?]()
+
+computers use different numeric representations depending on the application. For example, a person's weight may be stored as a 16-bit integer while their house address may be stored in BCD. At this point, five binary representations have been introduced (unsigned binary, signed magnitude, 2's complement, BCD, and floating-point), and hexadecimal representations has been presented as a quick means of writing binary values.
+
+Computers, however, do more with numbers that simply represent them. In Chapter 4, logic gates, the components that computers use to manipulate binary signals, will be presented. They are the lowest-level of computer hardware what we will be examining. We will use them to beging constructing the more complex componets of the computer.
+
+
 # * [Problems]()
 
 # 4. [Chapter Four: Logic Functions and Gates]()
