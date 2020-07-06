@@ -1044,11 +1044,133 @@ Chapter 5 presents a mathematical-like method for representing logic circuits al
 # * [Problems]()
 
 # 5. [Chapter Five: Boolean Algebra]()
+
+At this point in our study of digital circuits, we have two methods for representing combinational logic: schematics and truth tables.
+
+![Screen Shot 2020-07-06 at 0 14 02](https://user-images.githubusercontent.com/24994818/86557993-a0be3c00-bf1d-11ea-8162-bf12f67aff19.png)
+
+These two methods are inadequate for a number of reasons:
+
+• Both schematics and truth tables take too much space to describe the operation of complex circuits with numerous inputs.
+• The truth table "hides" circuit information.
+• The schematic diagram is difficult to use when trying to determine
+output values for each input combination.
+
+To overcome these problems, a discipline much like algebra is practiced that uses expressions to describe digital circuitry. These expressions, which are called **boolean expressions*, use the input variable names, A, B, C, etc., and combine them using symbols representing the AND, OR, and NOT gates. These boolean expressions can be used to describe or evaluate the output of a circuit.
+There is an additional benefit. Just like algebra, a set of rules exist that when applied to boolean expressions can dramatically simplify them. A simpler expression that produces the same output can be realized with fewer logic gates. A lower gate count results in cheaper circuitry, smaller circuit boards, and lower power consumption.
+If your software uses binary logic, the logic can be represented with boolean expressions. Applying the rules of simplification will make the software run faster or allow it to use less memory.
+The next section describes the representation of the three primary logic functions, NOT, AND, and OR, and how to convert combinational logic to a boolean expression.
+
 # * [5.1 Need for Boolean Expressions]()
+
+Analogous behavior can be shown between boolean algebra and mathematical algebra, and as a result, similar symbols and syntax can be used. For example, the following expressions hold true in math.
+
+
+0·0=0 0·1=0 1·0=0 1·1=1
+
+This looks like the AND function allowing an analogy to be drawn between the mathematical multiply and the boolean AND functions. Therefore, in boolean algebra, A AND'ed with B is written A · B.
+
+![Screen Shot 2020-07-06 at 0 16 06](https://user-images.githubusercontent.com/24994818/86558054-e5e26e00-bf1d-11ea-9deb-6adc44e52aa2.png)
+
+Mathematical addition has a similar parallel in boolean algebra, although it is not quite as flawless. The following four mathematical expressions hold true for addition.
+
+0+0=0 0+1=1 1+0=1 1+1=2
+
+The first three operations match the OR function, and if the last operation is viewed as having a non-zero result instead of the decimal result of two, it too can be viewed as operating similar to the OR function. Therefore, the boolean OR function is analogous to the mathematical function of addition.
+
+![Screen Shot 2020-07-06 at 0 16 50](https://user-images.githubusercontent.com/24994818/86558093-001c4c00-bf1e-11ea-854b-88ca2c425cfc.png)
+
+An analogy cannot be made between the boolean NOT and any mathematical operation. Later in this chapter we will see how the NOT function, unlike AND and OR, requires its own special theorems for algebraic manipulation. The NOT is represented with a bar across the inverted element.
+
+![Screen Shot 2020-07-06 at 0 17 13](https://user-images.githubusercontent.com/24994818/86558109-0dd1d180-bf1e-11ea-866c-8909f5f29ead.png)
+
+The NOT operation may be used to invert the result of a larger expression. For example, the NAND function which places an inverter at the output of an AND gate is written as:
+
+![Screen Shot 2020-07-06 at 0 17 58](https://user-images.githubusercontent.com/24994818/86558143-280baf80-bf1e-11ea-8762-94862a6d45de.png)
+
+Since the bar goes across A · B, the NOT is performed after the AND. Let's begin with some simple examples. Can you determine the
+output of the boolean expression 1 + 0 + 1? Since the plus-sign represents the OR circuit, the expression represents 1 or 0 or 1.
+
+![Screen Shot 2020-07-06 at 0 18 25](https://user-images.githubusercontent.com/24994818/86558167-38238f00-bf1e-11ea-87bd-ef6462f6a7a2.png)
+
+Since an OR-gate outputs a 1 if any of its inputs equal 1, then 1 + 0 + 1 = 1.
+
+The two-input XOR operation is represented using the symbol ⊕, but it can also be represented using a boolean expression. Basically, the two-input XOR equals one if A = 0 and B = 1 or if A = 1 and B = 0. This gives us the following expression.
+
+![Screen Shot 2020-07-06 at 0 19 02](https://user-images.githubusercontent.com/24994818/86558189-4e314f80-bf1e-11ea-9a87-0ac16875e87f.png)
+
+The next section shows how the boolean operators ·, +, ⊕, and the
+NOT bar may be combined to represent complex combinational logic.
+
 # * [5.2 Symbols of Boolean Algebra]()
+
+Just as mathematical algebra combines multiplication and addition to create complex expressions, boolean algebra combines AND, OR, and NOT functions to represent complex combinational logic. Our experience with algebra allows us to understand the expression
+Y = X · (X +5) + 3. The decimal value 5 is added to a copy of X, the result of which is then multiplied by a second copy of X. Lastly, a decimal 3 is added and the final result is assigned to Y.
+This example shows us two things. First, each mathematical operation has a priority, e.g., multiplication is performed before addition. This priority is referred to as precedence. Second, variables such X can appear multiple times in an expression, each appearance representing the current value of X.
+Boolean algebra allows for the same operation. Take for example the circuit shown in Figure 5-6.
+
+![Screen Shot 2020-07-06 at 0 20 31](https://user-images.githubusercontent.com/24994818/86558269-859ffc00-bf1e-11ea-8c2d-182e278a3340.png)
+
+In Chapter 4, we determined the truth table for this circuit by taking the input signals A, B, and C from left to right through each gate. As shown in Figure 5-7, we can do the same thing to determine the boolean expression.
+Notice the use of parenthesis in step c. Just as in mathematical algebra, parenthesis can be used to force the order in which operations are taken. In the absence of parenthesis, however, the AND, OR, and NOT functions have an order of precedence.
+
+![Screen Shot 2020-07-06 at 0 21 16](https://user-images.githubusercontent.com/24994818/86558315-a8321500-bf1e-11ea-8491-3f989f1c5a9b.png)
+
+To begin with, AND takes precedence over OR unless overridden by parenthesis. NOT is a special case in that it can act like a set of parenthesis. If the bar indicating the NOT function spans a single variable, it takes precedence over AND and OR. If, however, the NOT bar spans an expression, the expression beneath the bar must be evaluated before the NOT is taken. Figure 5-8 presents two examples of handling precedence with the NOT function.
+
+![Screen Shot 2020-07-06 at 0 22 05](https://user-images.githubusercontent.com/24994818/86558354-bbdd7b80-bf1e-11ea-9f89-6afdf521eed3.png)
+
+Understanding this is vital because unlike the mathematical inverse, the two expressions below are not equivalent.
+
+![Screen Shot 2020-07-06 at 0 22 34](https://user-images.githubusercontent.com/24994818/86558386-cdbf1e80-bf1e-11ea-924c-470abab0e012.png)
+
+Let's do an example addressing precedence with a more complex boolean expression. Using parenthesis and the order of precedence, the boolean expression below has a single interpretation.
+
+![Screen Shot 2020-07-06 at 0 23 04](https://user-images.githubusercontent.com/24994818/86558407-de6f9480-bf1e-11ea-9745-0ebe5fba869a.png)
+
+The following steps show the order to evaluate the above expression.
+
+1. OR B with C because the operation is contained under a single NOT bar and is contained within the lowest set of parenthesis
+2. Invert the result of step 1 because NOT takes precedence over OR
+3. OR A with the result of step 2 because of the parenthesis
+4. Invert result of step 3
+5. AND A and D because AND takes precedence over OR
+6. OR the results of steps 4 and 5
+
+We can use this order of operations to convert the expression to its
+schematic representation. By starting with a list of inputs to the circuit, then passing each input through the correct gates, we can develop the circuit. Figure 5-9 does just this for the previous boolean expression. We list the inputs for the expression, A, B, C, and D, on the left side of the figure. These inputs are then passed through the gates using the same order as the steps shown above. The number inside each gate of the figure corresponds to the order of the steps.
+
+![Screen Shot 2020-07-06 at 0 23 59](https://user-images.githubusercontent.com/24994818/86558465-ff37ea00-bf1e-11ea-9e74-f519f9882cc9.png)
+
+The following sections show how boolean expressions can be used to modify combinational logic in order to reduce complexity or otherwise modify its structure.
+
 # * [5.3 Boolean Expressions of Combinational Logic]()
+
+The manipulation of algebraic expressions is based on fundamental laws. Some of these laws extend to the manipulation of boolean expressions. For example, the commutative law of algebra which states that the result of an operation is the same regardless of the order of operands holds true for boolean algebra too. This is shown for the OR function applied to two variables in the truth tables of Figure 5-10.
+
+![Screen Shot 2020-07-06 at 0 24 50](https://user-images.githubusercontent.com/24994818/86558500-1d9de580-bf1f-11ea-8c36-cc941fbd1337.png)
+
+Not only does Figure 5-10 show how the commutative law applies to the OR function, it also shows how truth tables can be used in boolean algebra to prove laws and rules. If a rule states that two boolean expressions are equal, then by developing the truth table for each expression and showing that the output is equal for all combinations of ones and zeros at the input, then the rule is proven true.
+Below, the three fundamental laws of boolean algebra are given along with examples.
+
+**Commutative Law**: The results of the boolean operations AND and OR are the same regardless of the order of their operands.
+
+* A+B=B+A 
+* A·B=B·A
+
+**Associative Law**: The results of the boolean operations AND and OR with three or more operands are the same regardless of which pair of elements are operated on first.
+
+* A + (B + C) = (A + B) + C 
+* A · (B · C) = (A · B) · C
+
+**Distributive Law**: The AND'ing of an operand with an OR expression is equivalent to OR'ing the results of an AND between the first operand and each operand within the OR expression.
+
+A · (B + C) = A · B + A · C
+
+The next section uses truth tables and laws to prove twelve rules of boolean algebra.
+
 # * [5.4 Laws of Boolean Algebra]()
-# * [5.5 Rules of Boolean Algebra]()
+# 	* [5.5 Rules of Boolean Algebra]()
 # * [5.5.1 NOT Rule]()
 # * [5.5.2 OR Rules]()
 # * [5.5.3 AND Rules]()
