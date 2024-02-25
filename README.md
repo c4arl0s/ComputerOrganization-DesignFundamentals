@@ -1,5 +1,11 @@
 # [go back to Overview](https://github.com/c4arl0s)
 
+In order to update an existing Git submodule execute: (You might need permissions from Owner to get submodules)
+
+```console
+git submodule update --remote --merge
+```
+
 # [Computer Organization and Design Fundamentals](https://github.com/c4arl0s/ComputerOrganization-DesignFundamentals#go-back-to-overview)
 
 1. [x] [1. Chapter 1: Digital Signals and Systems](https://github.com/c4arl0s/ComputerOrganizationDesignFundamentalsContentIndex#chapter-1-digital-signals-and-systems) 
@@ -15,7 +21,7 @@
 11. [x] [11. Chapter 11: State Machines](https://github.com/c4arl0s/ComputerOrganizationDesignFundamentalsContentIndex#chapter-11-state-machines)
 12. [x] [12. Chapter 12: Memory Organization](https://github.com/c4arl0s/ComputerOrganizationDesignFundamentalsContentIndex#chapter-12-memory-organization)
 13. [ ] [13. Chapter 13: Memory Hierarchy](https://github.com/c4arl0s/ComputerOrganizationDesignFundamentalsContentIndex#chapter-13-memory-hierarchy)
-<!-- 14. Chapter Fourteen: Serial Protocol Basics -->
-<!-- 15. Chapter Fifteen: Introduction to Processor Architecture -->
-<!-- 16. Chapter Sixteen: Intel 80x86 Base Architecture -->
+14. Chapter Fourteen: Serial Protocol Basics 
+15. Chapter Fifteen: Introduction to Processor Architecture
+16. Chapter Sixteen: Intel 80x86 Base Architecture
 

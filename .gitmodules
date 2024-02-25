@@ -1,0 +1,42 @@
+[submodule "ComputerOrganizationDesignFundamentalsContentIndex"]
+	path = ComputerOrganizationDesignFundamentalsContentIndex
+	url = git@github.com:c4arl0s/ComputerOrganizationDesignFundamentalsContentIndex.git
+[submodule "Chapter2NumberingSystems"]
+	path = Chapter2NumberingSystems
+	url = git@github.com:c4arl0s/Chapter2NumberingSystems.git
+[submodule "Chapter1DigitalSignalsAndSystems"]
+	path = Chapter1DigitalSignalsAndSystems
+	url = git@github.com:c4arl0s/Chapter1DigitalSignalsAndSystems.git
+[submodule "Chapter3BinaryMathAndSignedRepresentations"]
+	path = Chapter3BinaryMathAndSignedRepresentations
+	url = git@github.com:c4arl0s/Chapter3BinaryMathAndSignedRepresentations.git
+[submodule "Chapter4LogicFunctionsAndGates"]
+	path = Chapter4LogicFunctionsAndGates
+	url = git@github.com:c4arl0s/Chapter4LogicFunctionsAndGates.git
+[submodule "Chapter5BooleanAlgebra"]
+	path = Chapter5BooleanAlgebra
+	url = git@github.com:c4arl0s/Chapter5BooleanAlgebra.git
+[submodule "Chapter6StandardBooleanExpressionFormats"]
+	path = Chapter6StandardBooleanExpressionFormats
+	url = git@github.com:c4arl0s/Chapter6StandardBooleanExpressionFormats.git
+[submodule "Chapter7KarnaughMaps"]
+	path = Chapter7KarnaughMaps
+	url = git@github.com:c4arl0s/Chapter7KarnaughMaps.git
+[submodule "Chapter8CombinationalLogicApplications"]
+	path = Chapter8CombinationalLogicApplications
+	url = git@github.com:c4arl0s/Chapter8CombinationalLogicApplications.git
+[submodule "Chapter9BinaryOperationApplications"]
+	path = Chapter9BinaryOperationApplications
+	url = git@github.com:c4arl0s/Chapter9BinaryOperationApplications.git
+[submodule "Chapter10MemoryCells"]
+	path = Chapter10MemoryCells
+	url = git@github.com:c4arl0s/Chapter10MemoryCells.git
+[submodule "Chapter11StateMachines"]
+	path = Chapter11StateMachines
+	url = git@github.com:c4arl0s/Chapter11StateMachines.git
+[submodule "Chapter12MemoryOrganization"]
+	path = Chapter12MemoryOrganization
+	url = git@github.com:c4arl0s/Chapter12MemoryOrganization.git
+[submodule "Chapter13MemoryHierarchy"]
+	path = Chapter13MemoryHierarchy
+	url = git@github.com:c4arl0s/Chapter13MemoryHierarchy.git
